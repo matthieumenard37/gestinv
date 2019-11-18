@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Gestinv
 {
-    public partial class Form1 : Form
+    public partial class Connection : Form
     {
-        public Form1()
+        public Connection()
         {
             InitializeComponent();
         }
