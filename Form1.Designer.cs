@@ -109,7 +109,7 @@
             this.Controls.Add(this.password);
             this.Controls.Add(this.login);
             this.Name = "Form1";
-            this.Text = "Fenêtre principale";
+            this.Text = "Connectez-vous";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
