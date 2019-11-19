@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="29fd9061-5390-4ab9-9b84-6c523eba7092" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:8080/ServiceSynchro/ServiceSynchro.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="ServiceSynchro.xsd" MetadataType="Schema" ID="6f7a7878-3732-4f77-b5b7-be8965954cbf" SourceId="1" SourceUrl="http://localhost:8080/ServiceSynchro/ServiceSynchro.svc?xsd=xsd2" />
+    <MetadataFile FileName="ServiceSynchro1.xsd" MetadataType="Schema" ID="4b94ace0-fa55-40e2-a508-cb41a3be1692" SourceId="1" SourceUrl="http://localhost:8080/ServiceSynchro/ServiceSynchro.svc?xsd=xsd1" />
+    <MetadataFile FileName="ServiceSynchro.wsdl" MetadataType="Wsdl" ID="ebfed603-c1bd-4340-b3cc-218e03f1f91c" SourceId="1" SourceUrl="http://localhost:8080/ServiceSynchro/ServiceSynchro.svc?wsdl" />
+    <MetadataFile FileName="ServiceSynchro.disco" MetadataType="Disco" ID="8aac8c6f-10fb-4303-b2a4-370ded28b8f2" SourceId="1" SourceUrl="http://localhost:8080/ServiceSynchro/ServiceSynchro.svc?disco" />
+    <MetadataFile FileName="ServiceSynchro2.xsd" MetadataType="Schema" ID="e2274578-1a4a-4199-8fd7-13abaf967ce7" SourceId="1" SourceUrl="http://localhost:8080/ServiceSynchro/ServiceSynchro.svc?xsd=xsd0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

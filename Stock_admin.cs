@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Gestinv
 {
-    public partial class Stock_user : Form
+    public partial class Stock_admin : Form
     {
-        public Stock_user()
+        public Stock_admin()
         {
             InitializeComponent();
         }

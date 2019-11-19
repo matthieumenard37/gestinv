@@ -1,6 +1,6 @@
 ﻿namespace Gestinv
 {
-    partial class Stock_user
+    partial class Stock_admin
     {
         /// <summary>
         /// Required designer variable.
