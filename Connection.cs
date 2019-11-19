@@ -34,7 +34,8 @@ namespace Gestinv
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            Stock_user fentre1 = new Stock_user();
+            fentre1.Show();
         }
     }
 }
