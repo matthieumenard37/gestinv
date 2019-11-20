@@ -15,9 +15,9 @@ namespace Gestinv
         public Stock_user()
         {
             InitializeComponent();
-            ServiceSynchro.ServiceSynchroClient ssc = new ServiceSynchro.ServiceSynchroClient();
-            string test = ssc.Test();
-            MessageBox.Show(test);
+            //ServiceSynchro.ServiceSynchroClient ssc = new ServiceSynchro.ServiceSynchroClient();
+            //string test = ssc.Test();
+            //MessageBox.Show(test);
         }
     }
 }
