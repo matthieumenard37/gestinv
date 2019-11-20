@@ -10,3 +10,14 @@ D:\Users\UlDev\CESI - Projet Inventaire\gestinv\obj\Debug\Gestinv.pdb
 D:\Users\UlDev\CESI - Projet Inventaire\gestinv\obj\Debug\Gestinv.Connection.resources
 D:\Users\UlDev\CESI - Projet Inventaire\gestinv\obj\Debug\Gestinv.Stock_admin.resources
 D:\Users\UlDev\CESI - Projet Inventaire\gestinv\obj\Debug\Gestinv.Stock_user.resources
+C:\Users\matth\OneDrive\Documents\GitHub\gestinv\obj\Debug\Gestinv.csprojAssemblyReference.cache
+C:\Users\matth\OneDrive\Documents\GitHub\gestinv\obj\Debug\Gestinv.Connection.resources
+C:\Users\matth\OneDrive\Documents\GitHub\gestinv\obj\Debug\Gestinv.Stock_admin.resources
+C:\Users\matth\OneDrive\Documents\GitHub\gestinv\obj\Debug\Gestinv.Stock_user.resources
+C:\Users\matth\OneDrive\Documents\GitHub\gestinv\obj\Debug\Gestinv.Properties.Resources.resources
+C:\Users\matth\OneDrive\Documents\GitHub\gestinv\obj\Debug\Gestinv.csproj.GenerateResource.cache
+C:\Users\matth\OneDrive\Documents\GitHub\gestinv\obj\Debug\Gestinv.exe
+C:\Users\matth\OneDrive\Documents\GitHub\gestinv\obj\Debug\Gestinv.pdb
+C:\Users\matth\OneDrive\Documents\GitHub\gestinv\bin\Debug\Gestinv.exe.config
+C:\Users\matth\OneDrive\Documents\GitHub\gestinv\bin\Debug\Gestinv.exe
+C:\Users\matth\OneDrive\Documents\GitHub\gestinv\bin\Debug\Gestinv.pdb

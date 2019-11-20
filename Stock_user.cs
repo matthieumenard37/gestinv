@@ -15,13 +15,9 @@ namespace Gestinv
         public Stock_user()
         {
             InitializeComponent();
-            ServiceSynchro.CompositeType ct = new ServiceSynchro.CompositeType();
             ServiceSynchro.ServiceSynchroClient ssc = new ServiceSynchro.ServiceSynchroClient();
-            ct.BoolValue = true;
-            ct.StringValue = "Essai de string";
-
-            ServiceSynchro.CompositeType resultat = ssc.GetDataUsingDataContract(ct);
-            MessageBox.Show(resultat.StringValue);
+            string test = ssc.Test();
+            MessageBox.Show(test);
         }
     }
 }

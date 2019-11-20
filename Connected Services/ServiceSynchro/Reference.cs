@@ -15,18 +15,21 @@ namespace Gestinv.ServiceSynchro {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="CompositeType", Namespace="http://schemas.datacontract.org/2004/07/ServiceSynchro")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="Family", Namespace="http://schemas.datacontract.org/2004/07/ServiceSynchro")]
     [System.SerializableAttribute()]
-    public partial class CompositeType : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+    public partial class Family : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
         
         [System.NonSerializedAttribute()]
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private bool BoolValueField;
+        private int IdField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string StringValueField;
+        private string NameField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private bool StateField;
         
         [global::System.ComponentModel.BrowsableAttribute(false)]
         public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
@@ -39,27 +42,40 @@ namespace Gestinv.ServiceSynchro {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public bool BoolValue {
+        public int Id {
             get {
-                return this.BoolValueField;
+                return this.IdField;
             }
             set {
-                if ((this.BoolValueField.Equals(value) != true)) {
-                    this.BoolValueField = value;
-                    this.RaisePropertyChanged("BoolValue");
+                if ((this.IdField.Equals(value) != true)) {
+                    this.IdField = value;
+                    this.RaisePropertyChanged("Id");
                 }
             }
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public string StringValue {
+        public string Name {
             get {
-                return this.StringValueField;
+                return this.NameField;
             }
             set {
-                if ((object.ReferenceEquals(this.StringValueField, value) != true)) {
-                    this.StringValueField = value;
-                    this.RaisePropertyChanged("StringValue");
+                if ((object.ReferenceEquals(this.NameField, value) != true)) {
+                    this.NameField = value;
+                    this.RaisePropertyChanged("Name");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public bool State {
+            get {
+                return this.StateField;
+            }
+            set {
+                if ((this.StateField.Equals(value) != true)) {
+                    this.StateField = value;
+                    this.RaisePropertyChanged("State");
                 }
             }
         }
@@ -79,16 +95,22 @@ namespace Gestinv.ServiceSynchro {
     public interface IServiceSynchro {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceSynchro/GetData", ReplyAction="http://tempuri.org/IServiceSynchro/GetDataResponse")]
-        string GetData(int value);
+        string[] GetData(string table, string column);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceSynchro/GetData", ReplyAction="http://tempuri.org/IServiceSynchro/GetDataResponse")]
-        System.Threading.Tasks.Task<string> GetDataAsync(int value);
+        System.Threading.Tasks.Task<string[]> GetDataAsync(string table, string column);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceSynchro/GetDataUsingDataContract", ReplyAction="http://tempuri.org/IServiceSynchro/GetDataUsingDataContractResponse")]
-        Gestinv.ServiceSynchro.CompositeType GetDataUsingDataContract(Gestinv.ServiceSynchro.CompositeType composite);
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceSynchro/Test", ReplyAction="http://tempuri.org/IServiceSynchro/TestResponse")]
+        string Test();
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceSynchro/GetDataUsingDataContract", ReplyAction="http://tempuri.org/IServiceSynchro/GetDataUsingDataContractResponse")]
-        System.Threading.Tasks.Task<Gestinv.ServiceSynchro.CompositeType> GetDataUsingDataContractAsync(Gestinv.ServiceSynchro.CompositeType composite);
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceSynchro/Test", ReplyAction="http://tempuri.org/IServiceSynchro/TestResponse")]
+        System.Threading.Tasks.Task<string> TestAsync();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceSynchro/GetFamilies", ReplyAction="http://tempuri.org/IServiceSynchro/GetFamiliesResponse")]
+        Gestinv.ServiceSynchro.Family[] GetFamilies();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceSynchro/GetFamilies", ReplyAction="http://tempuri.org/IServiceSynchro/GetFamiliesResponse")]
+        System.Threading.Tasks.Task<Gestinv.ServiceSynchro.Family[]> GetFamiliesAsync();
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -118,20 +140,28 @@ namespace Gestinv.ServiceSynchro {
                 base(binding, remoteAddress) {
         }
         
-        public string GetData(int value) {
-            return base.Channel.GetData(value);
+        public string[] GetData(string table, string column) {
+            return base.Channel.GetData(table, column);
         }
         
-        public System.Threading.Tasks.Task<string> GetDataAsync(int value) {
-            return base.Channel.GetDataAsync(value);
+        public System.Threading.Tasks.Task<string[]> GetDataAsync(string table, string column) {
+            return base.Channel.GetDataAsync(table, column);
         }
         
-        public Gestinv.ServiceSynchro.CompositeType GetDataUsingDataContract(Gestinv.ServiceSynchro.CompositeType composite) {
-            return base.Channel.GetDataUsingDataContract(composite);
+        public string Test() {
+            return base.Channel.Test();
         }
         
-        public System.Threading.Tasks.Task<Gestinv.ServiceSynchro.CompositeType> GetDataUsingDataContractAsync(Gestinv.ServiceSynchro.CompositeType composite) {
-            return base.Channel.GetDataUsingDataContractAsync(composite);
+        public System.Threading.Tasks.Task<string> TestAsync() {
+            return base.Channel.TestAsync();
+        }
+        
+        public Gestinv.ServiceSynchro.Family[] GetFamilies() {
+            return base.Channel.GetFamilies();
+        }
+        
+        public System.Threading.Tasks.Task<Gestinv.ServiceSynchro.Family[]> GetFamiliesAsync() {
+            return base.Channel.GetFamiliesAsync();
         }
     }
 }
