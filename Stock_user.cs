@@ -19,5 +19,10 @@ namespace Gestinv
             //string test = ssc.Test();
             //MessageBox.Show(test);
         }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
