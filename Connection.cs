@@ -37,5 +37,10 @@ namespace Gestinv
             Stock_user fentre1 = new Stock_user();
             fentre1.Show();
         }
+
+        private void lbl_espaceConnexion_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
