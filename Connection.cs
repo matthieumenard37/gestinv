@@ -37,5 +37,11 @@ namespace Gestinv
             Stock_user fentre1 = new Stock_user();
             fentre1.Show();
         }
-    }
+
+		private void button1_Click_1(object sender, EventArgs e)
+		{
+			UsersManagement fum = new UsersManagement();
+			fum.ShowDialog();
+		}
+	}
 }

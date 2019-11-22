@@ -31,13 +31,44 @@
   </xs:element>
   <xs:element name="GetFamilies">
     <xs:complexType>
-      <xs:sequence />
+      <xs:sequence>
+        <xs:element minOccurs="0" name="OnlyActive" type="xs:boolean" />
+      </xs:sequence>
     </xs:complexType>
   </xs:element>
   <xs:element name="GetFamiliesResponse">
     <xs:complexType>
       <xs:sequence>
         <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/ServiceSynchro" minOccurs="0" name="GetFamiliesResult" nillable="true" type="q2:ArrayOfFamily" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUsers">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="OnlyActive" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUsersResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/ServiceSynchro" minOccurs="0" name="GetUsersResult" nillable="true" type="q3:ArrayOfUser" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetArticles">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="FamilyId" type="xs:int" />
+        <xs:element minOccurs="0" name="OnlyActive" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetArticlesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/ServiceSynchro" minOccurs="0" name="GetArticlesResult" nillable="true" type="q4:ArrayOfArticle" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>

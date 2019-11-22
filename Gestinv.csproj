@@ -118,7 +118,13 @@
     <EmbeddedResource Include="UsersManagement.resx">
       <DependentUpon>UsersManagement.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="Connected Services\ServiceSynchro\Gestinv.ServiceSynchro.Article.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
     <None Include="Connected Services\ServiceSynchro\Gestinv.ServiceSynchro.Family.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceSynchro\Gestinv.ServiceSynchro.User.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Connected Services\ServiceSynchro\ServiceSynchro1.wsdl" />
