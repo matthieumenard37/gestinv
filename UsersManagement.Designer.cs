@@ -34,7 +34,7 @@
 			this.btn_addUser = new System.Windows.Forms.Button();
 			this.btn_deleteUser = new System.Windows.Forms.Button();
 			this.btn_updateUser = new System.Windows.Forms.Button();
-			this.label1 = new System.Windows.Forms.Label();
+			this.lbl_titreUsersManagement = new System.Windows.Forms.Label();
 			this.cb_filter = new System.Windows.Forms.CheckBox();
 			this.label2 = new System.Windows.Forms.Label();
 			this.Nom = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -118,23 +118,23 @@
 			this.btn_updateUser.TabIndex = 5;
 			this.btn_updateUser.UseVisualStyleBackColor = false;
 			// 
-			// label1
+			// lbl_titreUsersManagement
 			// 
-			this.label1.BackColor = System.Drawing.Color.Transparent;
-			this.label1.Font = new System.Drawing.Font("Mongolian Baiti", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label1.Location = new System.Drawing.Point(-2, 17);
-			this.label1.Name = "label1";
-			this.label1.Size = new System.Drawing.Size(1098, 43);
-			this.label1.TabIndex = 0;
-			this.label1.Text = "Utilisateurs";
-			this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-			this.label1.Click += new System.EventHandler(this.label1_Click);
+			this.lbl_titreUsersManagement.BackColor = System.Drawing.Color.Transparent;
+			this.lbl_titreUsersManagement.Font = new System.Drawing.Font("Mongolian Baiti", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lbl_titreUsersManagement.Location = new System.Drawing.Point(-2, 17);
+			this.lbl_titreUsersManagement.Name = "lbl_titreUsersManagement";
+			this.lbl_titreUsersManagement.Size = new System.Drawing.Size(1094, 43);
+			this.lbl_titreUsersManagement.TabIndex = 0;
+			this.lbl_titreUsersManagement.Text = "GESTION DES UTILISATEURS";
+			this.lbl_titreUsersManagement.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+			this.lbl_titreUsersManagement.Click += new System.EventHandler(this.label1_Click);
 			// 
 			// cb_filter
 			// 
 			this.cb_filter.AutoSize = true;
 			this.cb_filter.Font = new System.Drawing.Font("Mongolian Baiti", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.cb_filter.Location = new System.Drawing.Point(813, 166);
+			this.cb_filter.Location = new System.Drawing.Point(789, 166);
 			this.cb_filter.Name = "cb_filter";
 			this.cb_filter.Size = new System.Drawing.Size(257, 24);
 			this.cb_filter.TabIndex = 6;
@@ -147,11 +147,12 @@
 			this.label2.AutoSize = true;
 			this.label2.BackColor = System.Drawing.Color.Transparent;
 			this.label2.Font = new System.Drawing.Font("Mongolian Baiti", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label2.Location = new System.Drawing.Point(832, 123);
+			this.label2.Location = new System.Drawing.Point(789, 133);
 			this.label2.Name = "label2";
 			this.label2.Size = new System.Drawing.Size(83, 30);
 			this.label2.TabIndex = 7;
 			this.label2.Text = "Filtrer";
+			this.label2.Click += new System.EventHandler(this.label2_Click);
 			// 
 			// Nom
 			// 
@@ -203,7 +204,7 @@
 			this.Controls.Add(this.label2);
 			this.Controls.Add(this.cb_filter);
 			this.Controls.Add(this.btn_logout);
-			this.Controls.Add(this.label1);
+			this.Controls.Add(this.lbl_titreUsersManagement);
 			this.Controls.Add(this.btn_updateUser);
 			this.Controls.Add(this.btn_deleteUser);
 			this.Controls.Add(this.btn_addUser);
@@ -224,7 +225,7 @@
 		private System.Windows.Forms.Button btn_addUser;
 		private System.Windows.Forms.Button btn_deleteUser;
 		private System.Windows.Forms.Button btn_updateUser;
-		private System.Windows.Forms.Label label1;
+		private System.Windows.Forms.Label lbl_titreUsersManagement;
 		private System.Windows.Forms.CheckBox cb_filter;
 		private System.Windows.Forms.Label label2;
 		private System.Windows.Forms.DataGridViewTextBoxColumn Nom;

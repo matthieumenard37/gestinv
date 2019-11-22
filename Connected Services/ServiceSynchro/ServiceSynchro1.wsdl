@@ -38,6 +38,12 @@
   <wsdl:message name="IServiceSynchro_GetArticles_OutputMessage">
     <wsdl:part name="parameters" element="tns:GetArticlesResponse" />
   </wsdl:message>
+  <wsdl:message name="IServiceSynchro_GetSynchronizations_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSynchronizations" />
+  </wsdl:message>
+  <wsdl:message name="IServiceSynchro_GetSynchronizations_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSynchronizationsResponse" />
+  </wsdl:message>
   <wsdl:portType name="IServiceSynchro">
     <wsdl:operation name="GetData">
       <wsdl:input wsaw:Action="http://tempuri.org/IServiceSynchro/GetData" message="tns:IServiceSynchro_GetData_InputMessage" />
@@ -58,6 +64,10 @@
     <wsdl:operation name="GetArticles">
       <wsdl:input wsaw:Action="http://tempuri.org/IServiceSynchro/GetArticles" message="tns:IServiceSynchro_GetArticles_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IServiceSynchro/GetArticlesResponse" message="tns:IServiceSynchro_GetArticles_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSynchronizations">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceSynchro/GetSynchronizations" message="tns:IServiceSynchro_GetSynchronizations_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceSynchro/GetSynchronizationsResponse" message="tns:IServiceSynchro_GetSynchronizations_OutputMessage" />
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="BasicHttpBinding_IServiceSynchro" type="tns:IServiceSynchro">
@@ -100,6 +110,15 @@
     </wsdl:operation>
     <wsdl:operation name="GetArticles">
       <soap:operation soapAction="http://tempuri.org/IServiceSynchro/GetArticles" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSynchronizations">
+      <soap:operation soapAction="http://tempuri.org/IServiceSynchro/GetSynchronizations" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>

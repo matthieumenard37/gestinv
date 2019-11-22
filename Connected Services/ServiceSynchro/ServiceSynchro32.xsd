@@ -47,4 +47,37 @@
     </xs:sequence>
   </xs:complexType>
   <xs:element name="Article" nillable="true" type="tns:Article" />
+  <xs:complexType name="ArrayOfSynchronization">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Synchronization" nillable="true" type="tns:Synchronization" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfSynchronization" nillable="true" type="tns:ArrayOfSynchronization" />
+  <xs:complexType name="Synchronization">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Date" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Id" type="xs:int" />
+      <xs:element minOccurs="0" name="Modifications" nillable="true" type="tns:ArrayOfModification" />
+      <xs:element minOccurs="0" name="UserLogin" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Synchronization" nillable="true" type="tns:Synchronization" />
+  <xs:complexType name="ArrayOfModification">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Modification" nillable="true" type="tns:Modification" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfModification" nillable="true" type="tns:ArrayOfModification" />
+  <xs:complexType name="Modification">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Article" nillable="true" type="tns:Article" />
+      <xs:element minOccurs="0" name="Family" nillable="true" type="tns:Family" />
+      <xs:element minOccurs="0" name="Id" type="xs:int" />
+      <xs:element minOccurs="0" name="ModificationType" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NewValue" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="OldValue" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="User" nillable="true" type="tns:User" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Modification" nillable="true" type="tns:Modification" />
 </xs:schema>

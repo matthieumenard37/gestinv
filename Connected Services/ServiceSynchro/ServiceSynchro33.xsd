@@ -72,4 +72,18 @@
       </xs:sequence>
     </xs:complexType>
   </xs:element>
+  <xs:element name="GetSynchronizations">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="numberOfResults" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSynchronizationsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/ServiceSynchro" minOccurs="0" name="GetSynchronizationsResult" nillable="true" type="q5:ArrayOfSynchronization" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
 </xs:schema>
