@@ -44,10 +44,11 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.login.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.login.Location = new System.Drawing.Point(247, 205);
-            this.login.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.login.Margin = new System.Windows.Forms.Padding(4);
             this.login.Name = "login";
             this.login.Size = new System.Drawing.Size(310, 45);
             this.login.TabIndex = 0;
+            this.login.TextChanged += new System.EventHandler(this.login_TextChanged);
             // 
             // password
             // 
@@ -56,10 +57,11 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.password.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.password.Location = new System.Drawing.Point(247, 336);
-            this.password.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.password.Margin = new System.Windows.Forms.Padding(4);
             this.password.Name = "password";
             this.password.Size = new System.Drawing.Size(310, 45);
             this.password.TabIndex = 1;
+            this.password.TextChanged += new System.EventHandler(this.password_TextChanged);
             // 
             // lbl_login_esp_connexion
             // 
@@ -98,7 +100,7 @@
             this.btn_connect.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btn_connect.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_connect.Location = new System.Drawing.Point(247, 431);
-            this.btn_connect.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_connect.Margin = new System.Windows.Forms.Padding(4);
             this.btn_connect.Name = "btn_connect";
             this.btn_connect.Size = new System.Drawing.Size(310, 59);
             this.btn_connect.TabIndex = 4;
@@ -130,7 +132,7 @@
             this.Controls.Add(this.lbl_login_esp_connexion);
             this.Controls.Add(this.password);
             this.Controls.Add(this.login);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Connection";
             this.Text = "Connectez-vous";
             this.Load += new System.EventHandler(this.Form1_Load);

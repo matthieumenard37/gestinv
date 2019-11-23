@@ -34,11 +34,54 @@ namespace Gestinv
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Stock_user fentre1 = new Stock_user();
-            fentre1.Show();
+            string[,] usersTable = {
+                { "1coucou", "1", "0", "totototo", "toto" },
+                { "2dede", "0", "1", "cacacaca", "caca" },
+                { "3dstst", "1", "1", "root", "toor" },
+                { "4gfdg", "0", "0", "pipipipi", "pipi" }
+                };
+
+            string inputLogin = login.Text;
+
+            string inputPassword = password.Text;
+            bool authen_state = false;
+
+            for (int iRow = 0; iRow < usersTable.GetLength(1)-1; iRow++ )
+            {
+                if ((usersTable[iRow,4].ToString() == inputLogin) && ((usersTable[iRow, 3].ToString() == inputPassword)))
+                {
+                    if (usersTable[iRow, 2].ToString() == "1")
+                    {
+                        authen_state = true;
+                        MenuAdmin fMenuAdmin = new MenuAdmin();
+                        fMenuAdmin.Show();
+                    }
+                    else if (usersTable[iRow, 2].ToString() == "0")
+                    {
+                        authen_state = true;
+                        Stock_user fStockUser = new Stock_user();
+                        fStockUser.Show();
+                    }
+                    else MessageBox.Show("Une erreur est survenue lors de l'authentification CODE ERREUR 2");
+                }
+            }
+            if (!authen_state)
+            {
+                MessageBox.Show("L'authentification a échouée connard !");
+            }
         }
 
         private void lbl_espaceConnexion_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void login_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void password_TextChanged(object sender, EventArgs e)
         {
 
         }

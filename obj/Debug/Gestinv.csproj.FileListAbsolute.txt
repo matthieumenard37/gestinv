@@ -21,3 +21,6 @@ C:\Users\matth\OneDrive\Documents\GitHub\gestinv\obj\Debug\Gestinv.pdb
 C:\Users\matth\OneDrive\Documents\GitHub\gestinv\bin\Debug\Gestinv.exe.config
 C:\Users\matth\OneDrive\Documents\GitHub\gestinv\bin\Debug\Gestinv.exe
 C:\Users\matth\OneDrive\Documents\GitHub\gestinv\bin\Debug\Gestinv.pdb
+C:\Users\matth\OneDrive\Documents\GitHub\gestinv\obj\Debug\Gestinv.LogsView.resources
+C:\Users\matth\OneDrive\Documents\GitHub\gestinv\obj\Debug\Gestinv.MenuAdmin.resources
+C:\Users\matth\OneDrive\Documents\GitHub\gestinv\obj\Debug\Gestinv.UsersManagement.resources
