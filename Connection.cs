@@ -32,10 +32,17 @@ namespace Gestinv
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        public void button1_Click(object sender, EventArgs e)
         {
-            Stock_user fentre1 = new Stock_user();
-            fentre1.Show();
+            //MenuAdmin fMenuAdmin = new MenuAdmin();
+            //fMenuAdmin.Show();
+            //this.Visible = false;
+            //Stock_user fStockUser= new Stock_user();
+            //fStockUser.Show();
+            MenuAdmin form2 = new MenuAdmin();
+            form2.Tag = this;
+            form2.Show(this);
+            Hide();
         }
 
         private void lbl_espaceConnexion_Click(object sender, EventArgs e)

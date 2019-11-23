@@ -47,6 +47,7 @@
             this.btn_voir_stocks.TabIndex = 1;
             this.btn_voir_stocks.Text = "Voir les Stocks";
             this.btn_voir_stocks.UseVisualStyleBackColor = true;
+            this.btn_voir_stocks.Click += new System.EventHandler(this.btn_voir_stocks_Click);
             // 
             // btn_consulter_journal_log
             // 
@@ -59,6 +60,7 @@
             this.btn_consulter_journal_log.TabIndex = 2;
             this.btn_consulter_journal_log.Text = "Consulter le journal des Logs";
             this.btn_consulter_journal_log.UseVisualStyleBackColor = true;
+            this.btn_consulter_journal_log.Click += new System.EventHandler(this.btn_consulter_journal_log_Click);
             // 
             // btn_gerer_utilsateurs
             // 
@@ -71,6 +73,7 @@
             this.btn_gerer_utilsateurs.TabIndex = 3;
             this.btn_gerer_utilsateurs.Text = "Gérer les Utilisateurs";
             this.btn_gerer_utilsateurs.UseVisualStyleBackColor = true;
+            this.btn_gerer_utilsateurs.Click += new System.EventHandler(this.btn_gerer_utilsateurs_Click);
             // 
             // lbl_menu_admin
             // 
@@ -91,6 +94,7 @@
             this.btn_menu_admin_deconnect.TabIndex = 8;
             this.btn_menu_admin_deconnect.Text = "Déconnexion";
             this.btn_menu_admin_deconnect.UseVisualStyleBackColor = true;
+            this.btn_menu_admin_deconnect.Click += new System.EventHandler(this.btn_menu_admin_deconnect_Click);
             // 
             // MenuAdmin
             // 
