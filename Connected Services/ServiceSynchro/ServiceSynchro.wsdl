@@ -44,6 +44,54 @@
   <wsdl:message name="IServiceSynchro_GetSynchronizations_OutputMessage">
     <wsdl:part name="parameters" element="tns:GetSynchronizationsResponse" />
   </wsdl:message>
+  <wsdl:message name="IServiceSynchro_CreateSynchro_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreateSynchro" />
+  </wsdl:message>
+  <wsdl:message name="IServiceSynchro_CreateSynchro_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreateSynchroResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceSynchro_SetFamily_InputMessage">
+    <wsdl:part name="parameters" element="tns:SetFamily" />
+  </wsdl:message>
+  <wsdl:message name="IServiceSynchro_SetFamily_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SetFamilyResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceSynchro_SetArticle_InputMessage">
+    <wsdl:part name="parameters" element="tns:SetArticle" />
+  </wsdl:message>
+  <wsdl:message name="IServiceSynchro_SetArticle_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SetArticleResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceSynchro_SetUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:SetUser" />
+  </wsdl:message>
+  <wsdl:message name="IServiceSynchro_SetUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SetUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceSynchro_DelFamily_InputMessage">
+    <wsdl:part name="parameters" element="tns:DelFamily" />
+  </wsdl:message>
+  <wsdl:message name="IServiceSynchro_DelFamily_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DelFamilyResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceSynchro_DelArticle_InputMessage">
+    <wsdl:part name="parameters" element="tns:DelArticle" />
+  </wsdl:message>
+  <wsdl:message name="IServiceSynchro_DelArticle_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DelArticleResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceSynchro_DelUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:DelUser" />
+  </wsdl:message>
+  <wsdl:message name="IServiceSynchro_DelUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DelUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceSynchro_UpdateStock_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateStock" />
+  </wsdl:message>
+  <wsdl:message name="IServiceSynchro_UpdateStock_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateStockResponse" />
+  </wsdl:message>
   <wsdl:portType name="IServiceSynchro">
     <wsdl:operation name="GetData">
       <wsdl:input wsaw:Action="http://tempuri.org/IServiceSynchro/GetData" message="tns:IServiceSynchro_GetData_InputMessage" />
@@ -68,6 +116,38 @@
     <wsdl:operation name="GetSynchronizations">
       <wsdl:input wsaw:Action="http://tempuri.org/IServiceSynchro/GetSynchronizations" message="tns:IServiceSynchro_GetSynchronizations_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IServiceSynchro/GetSynchronizationsResponse" message="tns:IServiceSynchro_GetSynchronizations_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateSynchro">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceSynchro/CreateSynchro" message="tns:IServiceSynchro_CreateSynchro_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceSynchro/CreateSynchroResponse" message="tns:IServiceSynchro_CreateSynchro_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SetFamily">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceSynchro/SetFamily" message="tns:IServiceSynchro_SetFamily_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceSynchro/SetFamilyResponse" message="tns:IServiceSynchro_SetFamily_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SetArticle">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceSynchro/SetArticle" message="tns:IServiceSynchro_SetArticle_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceSynchro/SetArticleResponse" message="tns:IServiceSynchro_SetArticle_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SetUser">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceSynchro/SetUser" message="tns:IServiceSynchro_SetUser_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceSynchro/SetUserResponse" message="tns:IServiceSynchro_SetUser_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DelFamily">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceSynchro/DelFamily" message="tns:IServiceSynchro_DelFamily_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceSynchro/DelFamilyResponse" message="tns:IServiceSynchro_DelFamily_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DelArticle">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceSynchro/DelArticle" message="tns:IServiceSynchro_DelArticle_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceSynchro/DelArticleResponse" message="tns:IServiceSynchro_DelArticle_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DelUser">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceSynchro/DelUser" message="tns:IServiceSynchro_DelUser_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceSynchro/DelUserResponse" message="tns:IServiceSynchro_DelUser_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateStock">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceSynchro/UpdateStock" message="tns:IServiceSynchro_UpdateStock_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceSynchro/UpdateStockResponse" message="tns:IServiceSynchro_UpdateStock_OutputMessage" />
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="BasicHttpBinding_IServiceSynchro" type="tns:IServiceSynchro">
@@ -119,6 +199,78 @@
     </wsdl:operation>
     <wsdl:operation name="GetSynchronizations">
       <soap:operation soapAction="http://tempuri.org/IServiceSynchro/GetSynchronizations" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateSynchro">
+      <soap:operation soapAction="http://tempuri.org/IServiceSynchro/CreateSynchro" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetFamily">
+      <soap:operation soapAction="http://tempuri.org/IServiceSynchro/SetFamily" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetArticle">
+      <soap:operation soapAction="http://tempuri.org/IServiceSynchro/SetArticle" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetUser">
+      <soap:operation soapAction="http://tempuri.org/IServiceSynchro/SetUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DelFamily">
+      <soap:operation soapAction="http://tempuri.org/IServiceSynchro/DelFamily" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DelArticle">
+      <soap:operation soapAction="http://tempuri.org/IServiceSynchro/DelArticle" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DelUser">
+      <soap:operation soapAction="http://tempuri.org/IServiceSynchro/DelUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateStock">
+      <soap:operation soapAction="http://tempuri.org/IServiceSynchro/UpdateStock" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>

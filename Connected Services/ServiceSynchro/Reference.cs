@@ -597,6 +597,54 @@ namespace Gestinv.ServiceSynchro {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceSynchro/GetSynchronizations", ReplyAction="http://tempuri.org/IServiceSynchro/GetSynchronizationsResponse")]
         System.Threading.Tasks.Task<Gestinv.ServiceSynchro.Synchronization[]> GetSynchronizationsAsync(int numberOfResults);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceSynchro/CreateSynchro", ReplyAction="http://tempuri.org/IServiceSynchro/CreateSynchroResponse")]
+        int CreateSynchro(int UserID);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceSynchro/CreateSynchro", ReplyAction="http://tempuri.org/IServiceSynchro/CreateSynchroResponse")]
+        System.Threading.Tasks.Task<int> CreateSynchroAsync(int UserID);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceSynchro/SetFamily", ReplyAction="http://tempuri.org/IServiceSynchro/SetFamilyResponse")]
+        int SetFamily(int FamilyId, Gestinv.ServiceSynchro.Family Family, int SynchroID);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceSynchro/SetFamily", ReplyAction="http://tempuri.org/IServiceSynchro/SetFamilyResponse")]
+        System.Threading.Tasks.Task<int> SetFamilyAsync(int FamilyId, Gestinv.ServiceSynchro.Family Family, int SynchroID);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceSynchro/SetArticle", ReplyAction="http://tempuri.org/IServiceSynchro/SetArticleResponse")]
+        int SetArticle(int ArticleId, Gestinv.ServiceSynchro.Article Article, int SynchroID);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceSynchro/SetArticle", ReplyAction="http://tempuri.org/IServiceSynchro/SetArticleResponse")]
+        System.Threading.Tasks.Task<int> SetArticleAsync(int ArticleId, Gestinv.ServiceSynchro.Article Article, int SynchroID);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceSynchro/SetUser", ReplyAction="http://tempuri.org/IServiceSynchro/SetUserResponse")]
+        int SetUser(int UserId, Gestinv.ServiceSynchro.User User, int SynchroID);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceSynchro/SetUser", ReplyAction="http://tempuri.org/IServiceSynchro/SetUserResponse")]
+        System.Threading.Tasks.Task<int> SetUserAsync(int UserId, Gestinv.ServiceSynchro.User User, int SynchroID);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceSynchro/DelFamily", ReplyAction="http://tempuri.org/IServiceSynchro/DelFamilyResponse")]
+        int DelFamily(int FamilyId, int SynchroID);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceSynchro/DelFamily", ReplyAction="http://tempuri.org/IServiceSynchro/DelFamilyResponse")]
+        System.Threading.Tasks.Task<int> DelFamilyAsync(int FamilyId, int SynchroID);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceSynchro/DelArticle", ReplyAction="http://tempuri.org/IServiceSynchro/DelArticleResponse")]
+        int DelArticle(int ArticleId, int SynchroID);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceSynchro/DelArticle", ReplyAction="http://tempuri.org/IServiceSynchro/DelArticleResponse")]
+        System.Threading.Tasks.Task<int> DelArticleAsync(int ArticleId, int SynchroID);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceSynchro/DelUser", ReplyAction="http://tempuri.org/IServiceSynchro/DelUserResponse")]
+        int DelUser(int UserId, int SynchroID);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceSynchro/DelUser", ReplyAction="http://tempuri.org/IServiceSynchro/DelUserResponse")]
+        System.Threading.Tasks.Task<int> DelUserAsync(int UserId, int SynchroID);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceSynchro/UpdateStock", ReplyAction="http://tempuri.org/IServiceSynchro/UpdateStockResponse")]
+        int UpdateStock(int ArticleId, int Quantity, int SynchroID);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceSynchro/UpdateStock", ReplyAction="http://tempuri.org/IServiceSynchro/UpdateStockResponse")]
+        System.Threading.Tasks.Task<int> UpdateStockAsync(int ArticleId, int Quantity, int SynchroID);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -672,6 +720,70 @@ namespace Gestinv.ServiceSynchro {
         
         public System.Threading.Tasks.Task<Gestinv.ServiceSynchro.Synchronization[]> GetSynchronizationsAsync(int numberOfResults) {
             return base.Channel.GetSynchronizationsAsync(numberOfResults);
+        }
+        
+        public int CreateSynchro(int UserID) {
+            return base.Channel.CreateSynchro(UserID);
+        }
+        
+        public System.Threading.Tasks.Task<int> CreateSynchroAsync(int UserID) {
+            return base.Channel.CreateSynchroAsync(UserID);
+        }
+        
+        public int SetFamily(int FamilyId, Gestinv.ServiceSynchro.Family Family, int SynchroID) {
+            return base.Channel.SetFamily(FamilyId, Family, SynchroID);
+        }
+        
+        public System.Threading.Tasks.Task<int> SetFamilyAsync(int FamilyId, Gestinv.ServiceSynchro.Family Family, int SynchroID) {
+            return base.Channel.SetFamilyAsync(FamilyId, Family, SynchroID);
+        }
+        
+        public int SetArticle(int ArticleId, Gestinv.ServiceSynchro.Article Article, int SynchroID) {
+            return base.Channel.SetArticle(ArticleId, Article, SynchroID);
+        }
+        
+        public System.Threading.Tasks.Task<int> SetArticleAsync(int ArticleId, Gestinv.ServiceSynchro.Article Article, int SynchroID) {
+            return base.Channel.SetArticleAsync(ArticleId, Article, SynchroID);
+        }
+        
+        public int SetUser(int UserId, Gestinv.ServiceSynchro.User User, int SynchroID) {
+            return base.Channel.SetUser(UserId, User, SynchroID);
+        }
+        
+        public System.Threading.Tasks.Task<int> SetUserAsync(int UserId, Gestinv.ServiceSynchro.User User, int SynchroID) {
+            return base.Channel.SetUserAsync(UserId, User, SynchroID);
+        }
+        
+        public int DelFamily(int FamilyId, int SynchroID) {
+            return base.Channel.DelFamily(FamilyId, SynchroID);
+        }
+        
+        public System.Threading.Tasks.Task<int> DelFamilyAsync(int FamilyId, int SynchroID) {
+            return base.Channel.DelFamilyAsync(FamilyId, SynchroID);
+        }
+        
+        public int DelArticle(int ArticleId, int SynchroID) {
+            return base.Channel.DelArticle(ArticleId, SynchroID);
+        }
+        
+        public System.Threading.Tasks.Task<int> DelArticleAsync(int ArticleId, int SynchroID) {
+            return base.Channel.DelArticleAsync(ArticleId, SynchroID);
+        }
+        
+        public int DelUser(int UserId, int SynchroID) {
+            return base.Channel.DelUser(UserId, SynchroID);
+        }
+        
+        public System.Threading.Tasks.Task<int> DelUserAsync(int UserId, int SynchroID) {
+            return base.Channel.DelUserAsync(UserId, SynchroID);
+        }
+        
+        public int UpdateStock(int ArticleId, int Quantity, int SynchroID) {
+            return base.Channel.UpdateStock(ArticleId, Quantity, SynchroID);
+        }
+        
+        public System.Threading.Tasks.Task<int> UpdateStockAsync(int ArticleId, int Quantity, int SynchroID) {
+            return base.Channel.UpdateStockAsync(ArticleId, Quantity, SynchroID);
         }
     }
 }
