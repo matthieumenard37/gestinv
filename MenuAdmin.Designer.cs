@@ -29,59 +29,68 @@
 		private void InitializeComponent()
 		{
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MenuAdmin));
-            this.label1 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btn_voir_stocks = new System.Windows.Forms.Button();
+            this.btn_consulter_journal_log = new System.Windows.Forms.Button();
+            this.btn_gerer_utilsateurs = new System.Windows.Forms.Button();
+            this.lbl_menu_admin = new System.Windows.Forms.Label();
+            this.btn_menu_admin_deconnect = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // label1
+            // btn_voir_stocks
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Mongolian Baiti", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(203, 56);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(449, 72);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "MENU ADMINISTRATEUR\r\n\r\n";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.btn_voir_stocks.Font = new System.Drawing.Font("Mongolian Baiti", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_voir_stocks.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btn_voir_stocks.Image = ((System.Drawing.Image)(resources.GetObject("btn_voir_stocks.Image")));
+            this.btn_voir_stocks.Location = new System.Drawing.Point(10, 129);
+            this.btn_voir_stocks.Name = "btn_voir_stocks";
+            this.btn_voir_stocks.Size = new System.Drawing.Size(783, 133);
+            this.btn_voir_stocks.TabIndex = 1;
+            this.btn_voir_stocks.Text = "Voir les Stocks";
+            this.btn_voir_stocks.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // btn_consulter_journal_log
             // 
-            this.button1.Font = new System.Drawing.Font("Mongolian Baiti", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.Location = new System.Drawing.Point(10, 129);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(783, 133);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Voir les Stocks";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btn_consulter_journal_log.Font = new System.Drawing.Font("Mongolian Baiti", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_consulter_journal_log.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btn_consulter_journal_log.Image = ((System.Drawing.Image)(resources.GetObject("btn_consulter_journal_log.Image")));
+            this.btn_consulter_journal_log.Location = new System.Drawing.Point(10, 407);
+            this.btn_consulter_journal_log.Name = "btn_consulter_journal_log";
+            this.btn_consulter_journal_log.Size = new System.Drawing.Size(783, 133);
+            this.btn_consulter_journal_log.TabIndex = 2;
+            this.btn_consulter_journal_log.Text = "Consulter le journal des Logs";
+            this.btn_consulter_journal_log.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // btn_gerer_utilsateurs
             // 
-            this.button2.Font = new System.Drawing.Font("Mongolian Baiti", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
-            this.button2.Location = new System.Drawing.Point(10, 407);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(783, 133);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "Consulter le journal des Logs";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btn_gerer_utilsateurs.Font = new System.Drawing.Font("Mongolian Baiti", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_gerer_utilsateurs.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btn_gerer_utilsateurs.Image = ((System.Drawing.Image)(resources.GetObject("btn_gerer_utilsateurs.Image")));
+            this.btn_gerer_utilsateurs.Location = new System.Drawing.Point(10, 268);
+            this.btn_gerer_utilsateurs.Name = "btn_gerer_utilsateurs";
+            this.btn_gerer_utilsateurs.Size = new System.Drawing.Size(783, 133);
+            this.btn_gerer_utilsateurs.TabIndex = 3;
+            this.btn_gerer_utilsateurs.Text = "Gérer les Utilisateurs";
+            this.btn_gerer_utilsateurs.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // lbl_menu_admin
             // 
-            this.button3.Font = new System.Drawing.Font("Mongolian Baiti", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
-            this.button3.Location = new System.Drawing.Point(10, 268);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(783, 133);
-            this.button3.TabIndex = 3;
-            this.button3.Text = "Gérer les Utilisateurs";
-            this.button3.UseVisualStyleBackColor = true;
+            this.lbl_menu_admin.AutoSize = true;
+            this.lbl_menu_admin.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_menu_admin.Font = new System.Drawing.Font("Mongolian Baiti", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_menu_admin.Location = new System.Drawing.Point(142, 49);
+            this.lbl_menu_admin.Name = "lbl_menu_admin";
+            this.lbl_menu_admin.Size = new System.Drawing.Size(521, 43);
+            this.lbl_menu_admin.TabIndex = 4;
+            this.lbl_menu_admin.Text = "MENU ADMINISTRATEUR";
+            // 
+            // btn_menu_admin_deconnect
+            // 
+            this.btn_menu_admin_deconnect.Location = new System.Drawing.Point(660, 12);
+            this.btn_menu_admin_deconnect.Name = "btn_menu_admin_deconnect";
+            this.btn_menu_admin_deconnect.Size = new System.Drawing.Size(133, 43);
+            this.btn_menu_admin_deconnect.TabIndex = 8;
+            this.btn_menu_admin_deconnect.Text = "Déconnexion";
+            this.btn_menu_admin_deconnect.UseVisualStyleBackColor = true;
             // 
             // MenuAdmin
             // 
@@ -89,10 +98,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(805, 547);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btn_menu_admin_deconnect);
+            this.Controls.Add(this.lbl_menu_admin);
+            this.Controls.Add(this.btn_gerer_utilsateurs);
+            this.Controls.Add(this.btn_consulter_journal_log);
+            this.Controls.Add(this.btn_voir_stocks);
             this.Name = "MenuAdmin";
             this.Text = "MenuAdmin";
             this.ResumeLayout(false);
@@ -101,10 +111,10 @@
 		}
 
 		#endregion
-
-		private System.Windows.Forms.Label label1;
-		private System.Windows.Forms.Button button1;
-		private System.Windows.Forms.Button button2;
-		private System.Windows.Forms.Button button3;
-	}
+		private System.Windows.Forms.Button btn_voir_stocks;
+		private System.Windows.Forms.Button btn_consulter_journal_log;
+		private System.Windows.Forms.Button btn_gerer_utilsateurs;
+        private System.Windows.Forms.Label lbl_menu_admin;
+        private System.Windows.Forms.Button btn_menu_admin_deconnect;
+    }
 }

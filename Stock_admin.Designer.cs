@@ -29,76 +29,55 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Stock_admin));
-            this.family = new System.Windows.Forms.ComboBox();
-            this.save = new System.Windows.Forms.Button();
+            this.cbbox_gestion_stocks_family = new System.Windows.Forms.ComboBox();
+            this.btn_gestion_stocks_save = new System.Windows.Forms.Button();
             this.add_family = new System.Windows.Forms.Button();
-            this.logout = new System.Windows.Forms.Button();
-            this.syncronize = new System.Windows.Forms.Button();
             this.delete_family = new System.Windows.Forms.Button();
             this.modify_family = new System.Windows.Forms.Button();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.delete_articles = new System.Windows.Forms.Button();
+            this.lbl_gestion_stocks = new System.Windows.Forms.Label();
+            this.btn_gestion_stocks_delete = new System.Windows.Forms.Button();
+            this.btn_gestion_stocks_deconnect = new System.Windows.Forms.Button();
+            this.btn_gestion_stocks_back = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // family
+            // cbbox_gestion_stocks_family
             // 
-            this.family.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.family.FormattingEnabled = true;
-            this.family.Location = new System.Drawing.Point(275, 130);
-            this.family.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.family.Name = "family";
-            this.family.Size = new System.Drawing.Size(481, 46);
-            this.family.TabIndex = 0;
+            this.cbbox_gestion_stocks_family.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbbox_gestion_stocks_family.FormattingEnabled = true;
+            this.cbbox_gestion_stocks_family.Location = new System.Drawing.Point(275, 130);
+            this.cbbox_gestion_stocks_family.Margin = new System.Windows.Forms.Padding(4);
+            this.cbbox_gestion_stocks_family.Name = "cbbox_gestion_stocks_family";
+            this.cbbox_gestion_stocks_family.Size = new System.Drawing.Size(481, 46);
+            this.cbbox_gestion_stocks_family.TabIndex = 0;
             // 
-            // save
+            // btn_gestion_stocks_save
             // 
-            this.save.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.save.Location = new System.Drawing.Point(419, 484);
-            this.save.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.save.Name = "save";
-            this.save.Size = new System.Drawing.Size(211, 55);
-            this.save.TabIndex = 3;
-            this.save.Text = "Enregistrer";
-            this.save.UseVisualStyleBackColor = true;
+            this.btn_gestion_stocks_save.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_gestion_stocks_save.Location = new System.Drawing.Point(261, 499);
+            this.btn_gestion_stocks_save.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_gestion_stocks_save.Name = "btn_gestion_stocks_save";
+            this.btn_gestion_stocks_save.Size = new System.Drawing.Size(211, 55);
+            this.btn_gestion_stocks_save.TabIndex = 3;
+            this.btn_gestion_stocks_save.Text = "Enregistrer";
+            this.btn_gestion_stocks_save.UseVisualStyleBackColor = true;
             // 
             // add_family
             // 
             this.add_family.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.add_family.Location = new System.Drawing.Point(779, 130);
-            this.add_family.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.add_family.Margin = new System.Windows.Forms.Padding(4);
             this.add_family.Name = "add_family";
             this.add_family.Size = new System.Drawing.Size(52, 48);
             this.add_family.TabIndex = 4;
             this.add_family.Text = "+";
             this.add_family.UseVisualStyleBackColor = true;
             // 
-            // logout
-            // 
-            this.logout.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.logout.Location = new System.Drawing.Point(851, 2);
-            this.logout.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.logout.Name = "logout";
-            this.logout.Size = new System.Drawing.Size(212, 48);
-            this.logout.TabIndex = 5;
-            this.logout.Text = "Logout";
-            this.logout.UseVisualStyleBackColor = true;
-            // 
-            // syncronize
-            // 
-            this.syncronize.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.syncronize.Location = new System.Drawing.Point(851, 58);
-            this.syncronize.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.syncronize.Name = "syncronize";
-            this.syncronize.Size = new System.Drawing.Size(212, 48);
-            this.syncronize.TabIndex = 6;
-            this.syncronize.Text = "Syncronize";
-            this.syncronize.UseVisualStyleBackColor = true;
-            // 
             // delete_family
             // 
             this.delete_family.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.delete_family.Location = new System.Drawing.Point(839, 130);
-            this.delete_family.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.delete_family.Margin = new System.Windows.Forms.Padding(4);
             this.delete_family.Name = "delete_family";
             this.delete_family.Size = new System.Drawing.Size(52, 48);
             this.delete_family.TabIndex = 7;
@@ -109,7 +88,7 @@
             // 
             this.modify_family.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.modify_family.Location = new System.Drawing.Point(899, 130);
-            this.modify_family.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.modify_family.Margin = new System.Windows.Forms.Padding(4);
             this.modify_family.Name = "modify_family";
             this.modify_family.Size = new System.Drawing.Size(52, 48);
             this.modify_family.TabIndex = 8;
@@ -125,57 +104,89 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel1.Location = new System.Drawing.Point(16, 186);
-            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 2;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1035, 255);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1038, 255);
             this.tableLayoutPanel1.TabIndex = 9;
             // 
-            // delete_articles
+            // lbl_gestion_stocks
             // 
-            this.delete_articles.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.delete_articles.Location = new System.Drawing.Point(356, 448);
-            this.delete_articles.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.delete_articles.Name = "delete_articles";
-            this.delete_articles.Size = new System.Drawing.Size(339, 28);
-            this.delete_articles.TabIndex = 10;
-            this.delete_articles.Text = "Supprimer les articles sélectionnés";
-            this.delete_articles.UseVisualStyleBackColor = true;
+            this.lbl_gestion_stocks.AutoSize = true;
+            this.lbl_gestion_stocks.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_gestion_stocks.Font = new System.Drawing.Font("Mongolian Baiti", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_gestion_stocks.Location = new System.Drawing.Point(301, 42);
+            this.lbl_gestion_stocks.Name = "lbl_gestion_stocks";
+            this.lbl_gestion_stocks.Size = new System.Drawing.Size(455, 43);
+            this.lbl_gestion_stocks.TabIndex = 11;
+            this.lbl_gestion_stocks.Text = "GESTION DES STOCKS";
+            // 
+            // btn_gestion_stocks_delete
+            // 
+            this.btn_gestion_stocks_delete.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_gestion_stocks_delete.Location = new System.Drawing.Point(596, 499);
+            this.btn_gestion_stocks_delete.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_gestion_stocks_delete.Name = "btn_gestion_stocks_delete";
+            this.btn_gestion_stocks_delete.Size = new System.Drawing.Size(211, 55);
+            this.btn_gestion_stocks_delete.TabIndex = 12;
+            this.btn_gestion_stocks_delete.Text = "Supprimer";
+            this.btn_gestion_stocks_delete.UseVisualStyleBackColor = true;
+            // 
+            // btn_gestion_stocks_deconnect
+            // 
+            this.btn_gestion_stocks_deconnect.Location = new System.Drawing.Point(921, 12);
+            this.btn_gestion_stocks_deconnect.Name = "btn_gestion_stocks_deconnect";
+            this.btn_gestion_stocks_deconnect.Size = new System.Drawing.Size(133, 43);
+            this.btn_gestion_stocks_deconnect.TabIndex = 13;
+            this.btn_gestion_stocks_deconnect.Text = "Déconnexion";
+            this.btn_gestion_stocks_deconnect.UseVisualStyleBackColor = true;
+            // 
+            // btn_gestion_stocks_back
+            // 
+            this.btn_gestion_stocks_back.Location = new System.Drawing.Point(12, 12);
+            this.btn_gestion_stocks_back.Name = "btn_gestion_stocks_back";
+            this.btn_gestion_stocks_back.Size = new System.Drawing.Size(133, 43);
+            this.btn_gestion_stocks_back.TabIndex = 14;
+            this.btn_gestion_stocks_back.Text = "Retour Accueil";
+            this.btn_gestion_stocks_back.UseVisualStyleBackColor = true;
             // 
             // Stock_admin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(1067, 554);
-            this.Controls.Add(this.delete_articles);
+            this.ClientSize = new System.Drawing.Size(1067, 613);
+            this.Controls.Add(this.btn_gestion_stocks_back);
+            this.Controls.Add(this.btn_gestion_stocks_deconnect);
+            this.Controls.Add(this.btn_gestion_stocks_delete);
+            this.Controls.Add(this.lbl_gestion_stocks);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.modify_family);
             this.Controls.Add(this.delete_family);
-            this.Controls.Add(this.syncronize);
-            this.Controls.Add(this.logout);
             this.Controls.Add(this.add_family);
-            this.Controls.Add(this.save);
-            this.Controls.Add(this.family);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Controls.Add(this.btn_gestion_stocks_save);
+            this.Controls.Add(this.cbbox_gestion_stocks_family);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Stock_admin";
             this.Text = "Stock";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.ComboBox family;
-        private System.Windows.Forms.Button save;
+        private System.Windows.Forms.ComboBox cbbox_gestion_stocks_family;
+        private System.Windows.Forms.Button btn_gestion_stocks_save;
         private System.Windows.Forms.Button add_family;
-        private System.Windows.Forms.Button logout;
-        private System.Windows.Forms.Button syncronize;
         private System.Windows.Forms.Button delete_family;
         private System.Windows.Forms.Button modify_family;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private System.Windows.Forms.Button delete_articles;
+        private System.Windows.Forms.Label lbl_gestion_stocks;
+        private System.Windows.Forms.Button btn_gestion_stocks_delete;
+        private System.Windows.Forms.Button btn_gestion_stocks_deconnect;
+        private System.Windows.Forms.Button btn_gestion_stocks_back;
     }
 }

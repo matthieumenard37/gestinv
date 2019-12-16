@@ -14,9 +14,9 @@ namespace Gestinv
         [STAThread]
         static void Main()
         {
-            var clientSynchro = new ServiceSynchro.ServiceSynchroClient();
-            clientSynchro.Open();
-            string familyNames = clientSynchro.Test();
+            //var clientSynchro = new ServiceSynchro.ServiceSynchroClient();
+            //clientSynchro.Open();
+            //string familyNames = clientSynchro.Test();
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Connection());
