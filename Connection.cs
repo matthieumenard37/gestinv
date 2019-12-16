@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Gestinv.Classes;
 
 namespace Gestinv
 {
@@ -34,6 +35,8 @@ namespace Gestinv
 
         private void button1_Click(object sender, EventArgs e)
         {
+            ServiceSynchro.User[] Allusers = Synchro.Users(true);
+
             string[,] usersTable = {
                 { "1coucou", "1", "0", "totototo", "toto" },
                 { "2dede", "0", "1", "cacacaca", "caca" },
@@ -45,24 +48,23 @@ namespace Gestinv
 
             string inputPassword = password.Text;
             bool authen_state = false;
-
-            for (int iRow = 0; iRow < usersTable.GetLength(1)-1; iRow++ )
+            var AllusersLength = Allusers.GetLength(0);
+            for (int iRow = 0; iRow < AllusersLength-1; iRow++ )
             {
-                if ((usersTable[iRow,4].ToString() == inputLogin) && ((usersTable[iRow, 3].ToString() == inputPassword)))
+                if ((Allusers[iRow].Login.ToString() == inputLogin) && ((Allusers[iRow].Password.ToString() == inputPassword)))
                 {
-                    if (usersTable[iRow, 2].ToString() == "1")
+                    if (Allusers[iRow].Admin)
                     {
                         authen_state = true;
                         MenuAdmin fMenuAdmin = new MenuAdmin();
                         fMenuAdmin.Show();
                     }
-                    else if (usersTable[iRow, 2].ToString() == "0")
+                    else
                     {
                         authen_state = true;
                         Stock_user fStockUser = new Stock_user();
                         fStockUser.Show();
                     }
-                    else MessageBox.Show("Une erreur est survenue lors de l'authentification CODE ERREUR 2");
                 }
             }
             if (!authen_state)
