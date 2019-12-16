@@ -27,5 +27,10 @@ namespace Gestinv
 			UsersManagement fUsersManagement = new UsersManagement();
 			fUsersManagement.Show();
 		}
+
+		private void btn_voir_stocks_Click(object sender, EventArgs e)
+		{
+
+		}
 	}
 }

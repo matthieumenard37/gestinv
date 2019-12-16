@@ -48,6 +48,7 @@
 			this.btn_voir_stocks.TabIndex = 1;
 			this.btn_voir_stocks.Text = "Voir les Stocks";
 			this.btn_voir_stocks.UseVisualStyleBackColor = true;
+			this.btn_voir_stocks.Click += new System.EventHandler(this.btn_voir_stocks_Click);
 			// 
 			// btn_consulter_journal_log
 			// 

@@ -37,13 +37,6 @@ namespace Gestinv
         {
             ServiceSynchro.User[] Allusers = Synchro.Users(true);
 
-            string[,] usersTable = {
-                { "1coucou", "1", "0", "totototo", "toto" },
-                { "2dede", "0", "1", "cacacaca", "caca" },
-                { "3dstst", "1", "1", "root", "toor" },
-                { "4gfdg", "0", "0", "pipipipi", "pipi" }
-                };
-
             string inputLogin = login.Text;
             //SOURCE
             string inputPassword = password.Text;
