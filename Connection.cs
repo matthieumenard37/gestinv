@@ -45,13 +45,15 @@ namespace Gestinv
                 };
 
             string inputLogin = login.Text;
-
+            //SOURCE
             string inputPassword = password.Text;
+            //HASH
+            string inputPasswordMd5 = md5.CalculateMD5Hash(inputPassword).ToLower();
             bool authen_state = false;
             var AllusersLength = Allusers.GetLength(0);
             for (int iRow = 0; iRow < AllusersLength-1; iRow++ )
             {
-                if ((Allusers[iRow].Login.ToString() == inputLogin) && ((Allusers[iRow].Password.ToString() == inputPassword)))
+                if ((Allusers[iRow].Login == inputLogin) && ((Allusers[iRow].Password == inputPasswordMd5)))
                 {
                     if (Allusers[iRow].Admin)
                     {
@@ -69,7 +71,7 @@ namespace Gestinv
             }
             if (!authen_state)
             {
-                MessageBox.Show("L'authentification a échouée connard !");
+                MessageBox.Show("L'authentification a échouée !");
             }
         }
 

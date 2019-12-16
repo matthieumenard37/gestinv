@@ -48,6 +48,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\md5.cs" />
     <Compile Include="Classes\Synchro.cs" />
     <Compile Include="Connected Services\ServiceSynchro\Reference.cs">
       <AutoGen>True</AutoGen>
