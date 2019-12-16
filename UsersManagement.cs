@@ -39,16 +39,12 @@ namespace Gestinv
 
 		private void cb_filter_CheckedChanged(object sender, EventArgs e)
 		{
-			// Filtrer, si la case est cochée, afficher aussi les users désactivés ('supprimés')
-			ServiceSynchro.ServiceSynchroClient ssc = new ServiceSynchro.ServiceSynchroClient();
-			var allUsers = ssc.GetUsers(false);
-			// Appelle Gestinv.Classes.Synchro Users()
 			if (cb_filter.Checked)
 			{
-				dtgv_usersList.DataSource = allUsers;
+				dtgv_usersList.DataSource = Synchro.Users(true);
 			}
 			else
-				dtgv_usersList.DataSource = ssc.GetUsers(true);
+				dtgv_usersList.DataSource = Synchro.Users(false);
 		}
 
 		private void label2_Click(object sender, EventArgs e)
