@@ -40,6 +40,7 @@ namespace Gestinv
             string inputLogin = login.Text;
             //SOURCE
             string inputPassword = password.Text;
+            password.Text = "";
             //HASH
             string inputPasswordMd5 = md5.CalculateMD5Hash(inputPassword).ToLower();
             bool authen_state = false;

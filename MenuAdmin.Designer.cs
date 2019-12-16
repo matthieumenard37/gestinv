@@ -62,6 +62,7 @@
 			this.btn_consulter_journal_log.TabIndex = 2;
 			this.btn_consulter_journal_log.Text = "Consulter le journal des Logs";
 			this.btn_consulter_journal_log.UseVisualStyleBackColor = true;
+			this.btn_consulter_journal_log.Click += new System.EventHandler(this.btn_consulter_journal_log_Click);
 			// 
 			// btn_gerer_utilsateurs
 			// 
