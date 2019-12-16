@@ -36,3 +36,17 @@ C:\Users\nimda\Documents\GitHub\gestinv\obj\Debug\Gestinv.csproj.GenerateResourc
 C:\Users\nimda\Documents\GitHub\gestinv\obj\Debug\Gestinv.csproj.CoreCompileInputs.cache
 C:\Users\nimda\Documents\GitHub\gestinv\obj\Debug\Gestinv.exe
 C:\Users\nimda\Documents\GitHub\gestinv\obj\Debug\Gestinv.pdb
+\\vmware-host\Shared Folders\Documents\GitHub\gestinv\obj\Debug\Gestinv.csprojAssemblyReference.cache
+\\vmware-host\Shared Folders\Documents\GitHub\gestinv\obj\Debug\Gestinv.Connection.resources
+\\vmware-host\Shared Folders\Documents\GitHub\gestinv\obj\Debug\Gestinv.LogsView.resources
+\\vmware-host\Shared Folders\Documents\GitHub\gestinv\obj\Debug\Gestinv.MenuAdmin.resources
+\\vmware-host\Shared Folders\Documents\GitHub\gestinv\obj\Debug\Gestinv.Stock_admin.resources
+\\vmware-host\Shared Folders\Documents\GitHub\gestinv\obj\Debug\Gestinv.Stock_user.resources
+\\vmware-host\Shared Folders\Documents\GitHub\gestinv\obj\Debug\Gestinv.Properties.Resources.resources
+\\vmware-host\Shared Folders\Documents\GitHub\gestinv\obj\Debug\Gestinv.UsersManagement.resources
+\\vmware-host\Shared Folders\Documents\GitHub\gestinv\obj\Debug\Gestinv.csproj.GenerateResource.cache
+\\vmware-host\Shared Folders\Documents\GitHub\gestinv\obj\Debug\Gestinv.exe
+\\vmware-host\Shared Folders\Documents\GitHub\gestinv\obj\Debug\Gestinv.pdb
+\\vmware-host\Shared Folders\Documents\GitHub\gestinv\bin\Debug\Gestinv.exe.config
+\\vmware-host\Shared Folders\Documents\GitHub\gestinv\bin\Debug\Gestinv.exe
+\\vmware-host\Shared Folders\Documents\GitHub\gestinv\bin\Debug\Gestinv.pdb

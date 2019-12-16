@@ -12,13 +12,10 @@ namespace Gestinv.Classes
 		//Méthode users
 		public string[] Users()
 		{
-			ServiceSynchro.ServiceSynchroClient ssc = new ServiceSynchro.ServiceSynchroClient();
-			var tailleSsc = ssc.GetUsers(false);
-			string[] users;
-			foreach (var item in tailleSsc)
-			{
-				//nourir le tableau
-			}
+			ServiceSynchro.ServiceSynchroClient ssc = new ServiceSynchro.ServiceSynchroClient(); 
+			var allUsers = ssc.GetUsers(false);
+			string[] users = new string[] { "Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi", "Dimanche" };
+			//string[] users;
 			return users;
 		}
 	}
