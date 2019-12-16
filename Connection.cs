@@ -35,7 +35,8 @@ namespace Gestinv
 
         private void button1_Click(object sender, EventArgs e)
         {
-            ServiceSynchro.User[] Allusers = Synchro.Users(true);
+            ServiceSynchro.ServiceSynchroClient ssc = new ServiceSynchro.ServiceSynchroClient();
+            ServiceSynchro.User[] Allusers = ssc.GetUsers(false);
 
             string inputLogin = login.Text;
             //SOURCE

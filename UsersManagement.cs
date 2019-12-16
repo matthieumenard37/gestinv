@@ -17,7 +17,8 @@ namespace Gestinv
 		public UsersManagement()
         {
             InitializeComponent();
-			dtgv_usersList.DataSource = Synchro.Users(false);
+			ServiceSynchro.ServiceSynchroClient ssc = new ServiceSynchro.ServiceSynchroClient();
+			dtgv_usersList.DataSource = ssc.GetUsers(true);
 		}
 
 		private void label1_Click(object sender, EventArgs e)
@@ -40,12 +41,15 @@ namespace Gestinv
 
 		private void cb_filter_CheckedChanged(object sender, EventArgs e)
 		{
+			ServiceSynchro.ServiceSynchroClient ssc = new ServiceSynchro.ServiceSynchroClient();
+			var allUsers = ssc.GetUsers(false);
+			var actUsers = ssc.GetUsers(true);
 			if (cb_filter.Checked)
 			{
-				dtgv_usersList.DataSource = Synchro.Users(true);
+				dtgv_usersList.DataSource = allUsers;
 			}
 			else
-				dtgv_usersList.DataSource = Synchro.Users(false);
+				dtgv_usersList.DataSource = actUsers;
 		}
 
 		private void label2_Click(object sender, EventArgs e)
