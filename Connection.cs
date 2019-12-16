@@ -85,5 +85,11 @@ namespace Gestinv
         {
 
         }
-    }
+
+		private void button1_Click_1(object sender, EventArgs e)
+		{
+			UsersManagement fum = new UsersManagement();
+			fum.ShowDialog();
+		}
+	}
 }

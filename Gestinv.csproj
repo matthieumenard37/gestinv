@@ -48,6 +48,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\Synchro.cs" />
     <Compile Include="Connected Services\ServiceSynchro\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -118,20 +119,29 @@
     <EmbeddedResource Include="UsersManagement.resx">
       <DependentUpon>UsersManagement.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="Connected Services\ServiceSynchro\Gestinv.ServiceSynchro.Article.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
     <None Include="Connected Services\ServiceSynchro\Gestinv.ServiceSynchro.Family.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\ServiceSynchro\ServiceSynchro1.wsdl" />
+    <None Include="Connected Services\ServiceSynchro\Gestinv.ServiceSynchro.Synchronization.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceSynchro\Gestinv.ServiceSynchro.User.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceSynchro\ServiceSynchro.wsdl" />
+    <None Include="Connected Services\ServiceSynchro\ServiceSynchro.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\ServiceSynchro\ServiceSynchro1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\ServiceSynchro\ServiceSynchro2.xsd">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Connected Services\ServiceSynchro\ServiceSynchro3.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Connected Services\ServiceSynchro\ServiceSynchro31.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Connected Services\ServiceSynchro\ServiceSynchro32.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Connected Services\ServiceSynchro\ServiceSynchro33.xsd">
       <SubType>Designer</SubType>
     </None>
     <None Include="Properties\Settings.settings">
@@ -166,7 +176,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Connected Services\ServiceSynchro\ServiceSynchro1.disco" />
+    <None Include="Connected Services\ServiceSynchro\ServiceSynchro.disco" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

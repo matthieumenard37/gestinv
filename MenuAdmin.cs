@@ -21,5 +21,11 @@ namespace Gestinv
 		{
 
 		}
+
+		private void btn_gerer_utilsateurs_Click(object sender, EventArgs e)
+		{
+			UsersManagement fUsersManagement = new UsersManagement();
+			fUsersManagement.Show();
+		}
 	}
 }

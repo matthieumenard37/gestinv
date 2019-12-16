@@ -90,6 +90,474 @@ namespace Gestinv.ServiceSynchro {
         }
     }
     
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="User", Namespace="http://schemas.datacontract.org/2004/07/ServiceSynchro")]
+    [System.SerializableAttribute()]
+    public partial class User : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private bool AdminField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int IdField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string LoginField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string PasswordField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private bool StateField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public bool Admin {
+            get {
+                return this.AdminField;
+            }
+            set {
+                if ((this.AdminField.Equals(value) != true)) {
+                    this.AdminField = value;
+                    this.RaisePropertyChanged("Admin");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int Id {
+            get {
+                return this.IdField;
+            }
+            set {
+                if ((this.IdField.Equals(value) != true)) {
+                    this.IdField = value;
+                    this.RaisePropertyChanged("Id");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Login {
+            get {
+                return this.LoginField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.LoginField, value) != true)) {
+                    this.LoginField = value;
+                    this.RaisePropertyChanged("Login");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Password {
+            get {
+                return this.PasswordField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.PasswordField, value) != true)) {
+                    this.PasswordField = value;
+                    this.RaisePropertyChanged("Password");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public bool State {
+            get {
+                return this.StateField;
+            }
+            set {
+                if ((this.StateField.Equals(value) != true)) {
+                    this.StateField = value;
+                    this.RaisePropertyChanged("State");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="Article", Namespace="http://schemas.datacontract.org/2004/07/ServiceSynchro")]
+    [System.SerializableAttribute()]
+    public partial class Article : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int FamilyIdField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int IdField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string LocationCodeField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string NameField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int QuantityField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private bool StateField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int FamilyId {
+            get {
+                return this.FamilyIdField;
+            }
+            set {
+                if ((this.FamilyIdField.Equals(value) != true)) {
+                    this.FamilyIdField = value;
+                    this.RaisePropertyChanged("FamilyId");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int Id {
+            get {
+                return this.IdField;
+            }
+            set {
+                if ((this.IdField.Equals(value) != true)) {
+                    this.IdField = value;
+                    this.RaisePropertyChanged("Id");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string LocationCode {
+            get {
+                return this.LocationCodeField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.LocationCodeField, value) != true)) {
+                    this.LocationCodeField = value;
+                    this.RaisePropertyChanged("LocationCode");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Name {
+            get {
+                return this.NameField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.NameField, value) != true)) {
+                    this.NameField = value;
+                    this.RaisePropertyChanged("Name");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int Quantity {
+            get {
+                return this.QuantityField;
+            }
+            set {
+                if ((this.QuantityField.Equals(value) != true)) {
+                    this.QuantityField = value;
+                    this.RaisePropertyChanged("Quantity");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public bool State {
+            get {
+                return this.StateField;
+            }
+            set {
+                if ((this.StateField.Equals(value) != true)) {
+                    this.StateField = value;
+                    this.RaisePropertyChanged("State");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="Synchronization", Namespace="http://schemas.datacontract.org/2004/07/ServiceSynchro")]
+    [System.SerializableAttribute()]
+    public partial class Synchronization : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private System.DateTime DateField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int IdField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private Gestinv.ServiceSynchro.Modification[] ModificationsField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string UserLoginField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.DateTime Date {
+            get {
+                return this.DateField;
+            }
+            set {
+                if ((this.DateField.Equals(value) != true)) {
+                    this.DateField = value;
+                    this.RaisePropertyChanged("Date");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int Id {
+            get {
+                return this.IdField;
+            }
+            set {
+                if ((this.IdField.Equals(value) != true)) {
+                    this.IdField = value;
+                    this.RaisePropertyChanged("Id");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public Gestinv.ServiceSynchro.Modification[] Modifications {
+            get {
+                return this.ModificationsField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.ModificationsField, value) != true)) {
+                    this.ModificationsField = value;
+                    this.RaisePropertyChanged("Modifications");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string UserLogin {
+            get {
+                return this.UserLoginField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.UserLoginField, value) != true)) {
+                    this.UserLoginField = value;
+                    this.RaisePropertyChanged("UserLogin");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="Modification", Namespace="http://schemas.datacontract.org/2004/07/ServiceSynchro")]
+    [System.SerializableAttribute()]
+    public partial class Modification : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private Gestinv.ServiceSynchro.Article ArticleField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private Gestinv.ServiceSynchro.Family FamilyField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int IdField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string ModificationTypeField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string NewValueField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string OldValueField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private Gestinv.ServiceSynchro.User UserField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public Gestinv.ServiceSynchro.Article Article {
+            get {
+                return this.ArticleField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.ArticleField, value) != true)) {
+                    this.ArticleField = value;
+                    this.RaisePropertyChanged("Article");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public Gestinv.ServiceSynchro.Family Family {
+            get {
+                return this.FamilyField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.FamilyField, value) != true)) {
+                    this.FamilyField = value;
+                    this.RaisePropertyChanged("Family");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int Id {
+            get {
+                return this.IdField;
+            }
+            set {
+                if ((this.IdField.Equals(value) != true)) {
+                    this.IdField = value;
+                    this.RaisePropertyChanged("Id");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string ModificationType {
+            get {
+                return this.ModificationTypeField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.ModificationTypeField, value) != true)) {
+                    this.ModificationTypeField = value;
+                    this.RaisePropertyChanged("ModificationType");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string NewValue {
+            get {
+                return this.NewValueField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.NewValueField, value) != true)) {
+                    this.NewValueField = value;
+                    this.RaisePropertyChanged("NewValue");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string OldValue {
+            get {
+                return this.OldValueField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.OldValueField, value) != true)) {
+                    this.OldValueField = value;
+                    this.RaisePropertyChanged("OldValue");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public Gestinv.ServiceSynchro.User User {
+            get {
+                return this.UserField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.UserField, value) != true)) {
+                    this.UserField = value;
+                    this.RaisePropertyChanged("User");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ServiceModel.ServiceContractAttribute(ConfigurationName="ServiceSynchro.IServiceSynchro")]
     public interface IServiceSynchro {
@@ -107,10 +575,28 @@ namespace Gestinv.ServiceSynchro {
         System.Threading.Tasks.Task<string> TestAsync();
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceSynchro/GetFamilies", ReplyAction="http://tempuri.org/IServiceSynchro/GetFamiliesResponse")]
-        Gestinv.ServiceSynchro.Family[] GetFamilies();
+        Gestinv.ServiceSynchro.Family[] GetFamilies(bool OnlyActive);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceSynchro/GetFamilies", ReplyAction="http://tempuri.org/IServiceSynchro/GetFamiliesResponse")]
-        System.Threading.Tasks.Task<Gestinv.ServiceSynchro.Family[]> GetFamiliesAsync();
+        System.Threading.Tasks.Task<Gestinv.ServiceSynchro.Family[]> GetFamiliesAsync(bool OnlyActive);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceSynchro/GetUsers", ReplyAction="http://tempuri.org/IServiceSynchro/GetUsersResponse")]
+        Gestinv.ServiceSynchro.User[] GetUsers(bool OnlyActive);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceSynchro/GetUsers", ReplyAction="http://tempuri.org/IServiceSynchro/GetUsersResponse")]
+        System.Threading.Tasks.Task<Gestinv.ServiceSynchro.User[]> GetUsersAsync(bool OnlyActive);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceSynchro/GetArticles", ReplyAction="http://tempuri.org/IServiceSynchro/GetArticlesResponse")]
+        Gestinv.ServiceSynchro.Article[] GetArticles(int FamilyId, bool OnlyActive);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceSynchro/GetArticles", ReplyAction="http://tempuri.org/IServiceSynchro/GetArticlesResponse")]
+        System.Threading.Tasks.Task<Gestinv.ServiceSynchro.Article[]> GetArticlesAsync(int FamilyId, bool OnlyActive);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceSynchro/GetSynchronizations", ReplyAction="http://tempuri.org/IServiceSynchro/GetSynchronizationsResponse")]
+        Gestinv.ServiceSynchro.Synchronization[] GetSynchronizations(int numberOfResults);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceSynchro/GetSynchronizations", ReplyAction="http://tempuri.org/IServiceSynchro/GetSynchronizationsResponse")]
+        System.Threading.Tasks.Task<Gestinv.ServiceSynchro.Synchronization[]> GetSynchronizationsAsync(int numberOfResults);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -156,12 +642,36 @@ namespace Gestinv.ServiceSynchro {
             return base.Channel.TestAsync();
         }
         
-        public Gestinv.ServiceSynchro.Family[] GetFamilies() {
-            return base.Channel.GetFamilies();
+        public Gestinv.ServiceSynchro.Family[] GetFamilies(bool OnlyActive) {
+            return base.Channel.GetFamilies(OnlyActive);
         }
         
-        public System.Threading.Tasks.Task<Gestinv.ServiceSynchro.Family[]> GetFamiliesAsync() {
-            return base.Channel.GetFamiliesAsync();
+        public System.Threading.Tasks.Task<Gestinv.ServiceSynchro.Family[]> GetFamiliesAsync(bool OnlyActive) {
+            return base.Channel.GetFamiliesAsync(OnlyActive);
+        }
+        
+        public Gestinv.ServiceSynchro.User[] GetUsers(bool OnlyActive) {
+            return base.Channel.GetUsers(OnlyActive);
+        }
+        
+        public System.Threading.Tasks.Task<Gestinv.ServiceSynchro.User[]> GetUsersAsync(bool OnlyActive) {
+            return base.Channel.GetUsersAsync(OnlyActive);
+        }
+        
+        public Gestinv.ServiceSynchro.Article[] GetArticles(int FamilyId, bool OnlyActive) {
+            return base.Channel.GetArticles(FamilyId, OnlyActive);
+        }
+        
+        public System.Threading.Tasks.Task<Gestinv.ServiceSynchro.Article[]> GetArticlesAsync(int FamilyId, bool OnlyActive) {
+            return base.Channel.GetArticlesAsync(FamilyId, OnlyActive);
+        }
+        
+        public Gestinv.ServiceSynchro.Synchronization[] GetSynchronizations(int numberOfResults) {
+            return base.Channel.GetSynchronizations(numberOfResults);
+        }
+        
+        public System.Threading.Tasks.Task<Gestinv.ServiceSynchro.Synchronization[]> GetSynchronizationsAsync(int numberOfResults) {
+            return base.Channel.GetSynchronizationsAsync(numberOfResults);
         }
     }
 }

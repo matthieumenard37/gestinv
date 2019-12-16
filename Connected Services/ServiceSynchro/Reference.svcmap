@@ -19,15 +19,15 @@
     <ServiceContractMappings />
   </ClientOptions>
   <MetadataSources>
-    <MetadataSource Address="http://10.176.132.154:8080/ServiceSynchro/ServiceSynchro.svc" Protocol="http" SourceId="1" />
+    <MetadataSource Address="http://10.176.130.29:8080/ServiceSynchro/ServiceSynchro.svc" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="ServiceSynchro1.disco" MetadataType="Disco" ID="80567973-70f3-4a9f-bd9d-a866d2b7ba2d" SourceId="1" SourceUrl="http://10.176.132.154:8080/ServiceSynchro/ServiceSynchro.svc?disco" />
-    <MetadataFile FileName="ServiceSynchro1.wsdl" MetadataType="Wsdl" ID="c8622194-c4ba-40c9-8fe6-0396afd8c2d3" SourceId="1" SourceUrl="http://10.176.132.154:8080/ServiceSynchro/ServiceSynchro.svc?wsdl" />
-    <MetadataFile FileName="ServiceSynchro3.xsd" MetadataType="Schema" ID="46e31fc3-c10b-4941-9637-6456e584e788" SourceId="1" SourceUrl="http://10.176.132.154:8080/ServiceSynchro/ServiceSynchro.svc?xsd=xsd1" />
-    <MetadataFile FileName="ServiceSynchro31.xsd" MetadataType="Schema" ID="0893cf0f-44a1-45a1-90cd-3498d2b168e7" SourceId="1" SourceUrl="http://10.176.132.154:8080/ServiceSynchro/ServiceSynchro.svc?xsd=xsd2" />
-    <MetadataFile FileName="ServiceSynchro32.xsd" MetadataType="Schema" ID="26922282-38eb-46f3-ac05-b2dc4836bd10" SourceId="1" SourceUrl="http://10.176.132.154:8080/ServiceSynchro/ServiceSynchro.svc?xsd=xsd3" />
-    <MetadataFile FileName="ServiceSynchro33.xsd" MetadataType="Schema" ID="7f2fdda5-90fc-4180-b617-9e691437ef31" SourceId="1" SourceUrl="http://10.176.132.154:8080/ServiceSynchro/ServiceSynchro.svc?xsd=xsd0" />
+    <MetadataFile FileName="ServiceSynchro.xsd" MetadataType="Schema" ID="fa0f8b4b-b82f-4b91-8203-cf53b9d51ab6" SourceId="1" SourceUrl="http://10.176.130.29:8080/ServiceSynchro/ServiceSynchro.svc?xsd=xsd1" />
+    <MetadataFile FileName="ServiceSynchro1.xsd" MetadataType="Schema" ID="58919444-88be-4adb-a65d-137766fa614d" SourceId="1" SourceUrl="http://10.176.130.29:8080/ServiceSynchro/ServiceSynchro.svc?xsd=xsd2" />
+    <MetadataFile FileName="ServiceSynchro2.xsd" MetadataType="Schema" ID="ac5835cd-70a5-44ab-9968-1ea24345a85f" SourceId="1" SourceUrl="http://10.176.130.29:8080/ServiceSynchro/ServiceSynchro.svc?xsd=xsd0" />
+    <MetadataFile FileName="ServiceSynchro.wsdl" MetadataType="Wsdl" ID="7bfb04a6-9ffd-4b76-ac64-9971ba9b253f" SourceId="1" SourceUrl="http://10.176.130.29:8080/ServiceSynchro/ServiceSynchro.svc?wsdl" />
+    <MetadataFile FileName="ServiceSynchro.disco" MetadataType="Disco" ID="cee68475-f1f9-4be0-889e-38ced2d904f9" SourceId="1" SourceUrl="http://10.176.130.29:8080/ServiceSynchro/ServiceSynchro.svc?disco" />
+    <MetadataFile FileName="ServiceSynchro3.xsd" MetadataType="Schema" ID="e9cfb70f-1379-42db-9de6-b52d1317c61b" SourceId="1" SourceUrl="http://10.176.130.29:8080/ServiceSynchro/ServiceSynchro.svc?xsd=xsd3" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
