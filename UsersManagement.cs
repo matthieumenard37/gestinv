@@ -36,7 +36,8 @@ namespace Gestinv
 
 		private void btn_addUser_Click(object sender, EventArgs e)
 		{
-			//
+			AddUser adduser = new AddUser();
+			adduser.Show();
 		}
 
 		private void cb_filter_CheckedChanged(object sender, EventArgs e)

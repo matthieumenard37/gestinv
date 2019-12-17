@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Gestinv.Classes;
 
 namespace Gestinv
 {
@@ -34,7 +35,24 @@ namespace Gestinv
 
 		private void btn_AddUser_Click(object sender, EventArgs e)
 		{
-			//txtBox_Name , txtBox_Password , cb_admin , btn_Add
+			if (txtBox_Password_1.Text == txtBox_Password_2.Text)
+			{
+				//txtBox_Name , txtBox_Password , cb_admin , btn_Add
+				string uLogin = txtBox_Name.Text;
+				string uPassw = txtBox_Password_1.Text;
+				bool uAdmin = cb_admin.Checked;
+				ServiceSynchro.User newUser = new ServiceSynchro.User();
+				newUser.Login = uLogin;
+				newUser.Password = md5.CalculateMD5Hash(uPassw).ToLower();
+				newUser.Admin = uAdmin;
+				newUser.State = true;
+				newUser.Id = -1;
+				Gestinv.Classes.User.AddUser(newUser);
+			}
+			else
+				MessageBox.Show("Les deux mdp ne correspondent pas");
+			txtBox_Password_1.Text = txtBox_Password_2.Text = txtBox_Name.Text = string.Empty;
+			cb_admin.Checked = false;
 		}
 	}
 }

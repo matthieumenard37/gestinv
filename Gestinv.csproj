@@ -71,6 +71,7 @@
     </Compile>
     <Compile Include="Classes\md5.cs" />
     <Compile Include="Classes\Synchro.cs" />
+    <Compile Include="Classes\User.cs" />
     <Compile Include="Connected Services\ServiceSynchro\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
