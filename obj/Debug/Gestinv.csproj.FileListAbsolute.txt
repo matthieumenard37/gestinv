@@ -42,3 +42,5 @@ D:\Users\UlDev\CESI - Projet Inventaire\gestinv\obj\Debug\Gestinv.AddUser.resour
 D:\Users\UlDev\CESI - Projet Inventaire\gestinv\obj\Debug\Gestinv.LogsView.resources
 D:\Users\UlDev\CESI - Projet Inventaire\gestinv\obj\Debug\Gestinv.MenuAdmin.resources
 D:\Users\UlDev\CESI - Projet Inventaire\gestinv\obj\Debug\Gestinv.UsersManagement.resources
+\\vmware-host\Shared Folders\Documents\GitHub\gestinv\obj\Debug\Gestinv.AddUser.resources
+\\vmware-host\Shared Folders\Documents\GitHub\gestinv\obj\Debug\Gestinv.UpdateUser.resources
