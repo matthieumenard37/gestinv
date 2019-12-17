@@ -92,6 +92,7 @@ namespace Gestinv
         private void btn_synchro_Click(object sender, EventArgs e)
         {
             Synchro.Upload(Articles);
+            this.Close();
         }
     }
 }
