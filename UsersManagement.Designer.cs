@@ -40,7 +40,6 @@
 			this.btn_deleteUser = new System.Windows.Forms.Button();
 			this.btn_updateUser = new System.Windows.Forms.Button();
 			this.lbl_titreUsersManagement = new System.Windows.Forms.Label();
-			this.cb_filter = new System.Windows.Forms.CheckBox();
 			this.label2 = new System.Windows.Forms.Label();
 			((System.ComponentModel.ISupportInitialize)(this.dtgv_usersList)).BeginInit();
 			this.SuspendLayout();
@@ -201,19 +200,6 @@
 			this.lbl_titreUsersManagement.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
 			this.lbl_titreUsersManagement.Click += new System.EventHandler(this.label1_Click);
 			// 
-			// cb_filter
-			// 
-			this.cb_filter.AutoSize = true;
-			this.cb_filter.Font = new System.Drawing.Font("Mongolian Baiti", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.cb_filter.Location = new System.Drawing.Point(1237, 273);
-			this.cb_filter.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-			this.cb_filter.Name = "cb_filter";
-			this.cb_filter.Size = new System.Drawing.Size(401, 34);
-			this.cb_filter.TabIndex = 6;
-			this.cb_filter.Text = "Afficher les utilisateur inactifs";
-			this.cb_filter.UseVisualStyleBackColor = true;
-			this.cb_filter.CheckedChanged += new System.EventHandler(this.cb_filter_CheckedChanged);
-			// 
 			// label2
 			// 
 			this.label2.AutoSize = true;
@@ -234,7 +220,6 @@
 			this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
 			this.ClientSize = new System.Drawing.Size(1669, 841);
 			this.Controls.Add(this.label2);
-			this.Controls.Add(this.cb_filter);
 			this.Controls.Add(this.btn_logout);
 			this.Controls.Add(this.lbl_titreUsersManagement);
 			this.Controls.Add(this.btn_updateUser);
@@ -259,7 +244,6 @@
 		private System.Windows.Forms.Button btn_deleteUser;
 		private System.Windows.Forms.Button btn_updateUser;
 		private System.Windows.Forms.Label lbl_titreUsersManagement;
-		private System.Windows.Forms.CheckBox cb_filter;
 		private System.Windows.Forms.Label label2;
 		private System.Windows.Forms.DataGridViewTextBoxColumn Nom;
 		private System.Windows.Forms.DataGridViewTextBoxColumn Id;

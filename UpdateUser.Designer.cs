@@ -35,7 +35,6 @@
 			this.tv_password = new System.Windows.Forms.Label();
 			this.txtb_password2 = new System.Windows.Forms.MaskedTextBox();
 			this.cb_admin = new System.Windows.Forms.CheckBox();
-			this.cb_actif = new System.Windows.Forms.CheckBox();
 			this.btn_Submit = new System.Windows.Forms.Button();
 			this.SuspendLayout();
 			// 
@@ -60,6 +59,7 @@
 			// 
 			this.txtb_password1.Location = new System.Drawing.Point(204, 172);
 			this.txtb_password1.Name = "txtb_password1";
+			this.txtb_password1.PasswordChar = '*';
 			this.txtb_password1.Size = new System.Drawing.Size(200, 31);
 			this.txtb_password1.TabIndex = 2;
 			// 
@@ -86,29 +86,20 @@
 			// 
 			this.txtb_password2.Location = new System.Drawing.Point(450, 172);
 			this.txtb_password2.Name = "txtb_password2";
+			this.txtb_password2.PasswordChar = '*';
 			this.txtb_password2.Size = new System.Drawing.Size(200, 31);
 			this.txtb_password2.TabIndex = 5;
 			// 
 			// cb_admin
 			// 
 			this.cb_admin.AutoSize = true;
-			this.cb_admin.Location = new System.Drawing.Point(120, 266);
+			this.cb_admin.Location = new System.Drawing.Point(204, 268);
 			this.cb_admin.Name = "cb_admin";
 			this.cb_admin.Size = new System.Drawing.Size(104, 29);
 			this.cb_admin.TabIndex = 6;
 			this.cb_admin.Text = "Admin";
 			this.cb_admin.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
 			this.cb_admin.UseVisualStyleBackColor = true;
-			// 
-			// cb_actif
-			// 
-			this.cb_actif.AutoSize = true;
-			this.cb_actif.Location = new System.Drawing.Point(450, 266);
-			this.cb_actif.Name = "cb_actif";
-			this.cb_actif.Size = new System.Drawing.Size(86, 29);
-			this.cb_actif.TabIndex = 7;
-			this.cb_actif.Text = "Actif";
-			this.cb_actif.UseVisualStyleBackColor = true;
 			// 
 			// btn_Submit
 			// 
@@ -118,6 +109,7 @@
 			this.btn_Submit.TabIndex = 8;
 			this.btn_Submit.Text = "Valider";
 			this.btn_Submit.UseVisualStyleBackColor = true;
+			this.btn_Submit.Click += new System.EventHandler(this.btn_Submit_Click);
 			// 
 			// UpdateUser
 			// 
@@ -125,7 +117,6 @@
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(800, 450);
 			this.Controls.Add(this.btn_Submit);
-			this.Controls.Add(this.cb_actif);
 			this.Controls.Add(this.cb_admin);
 			this.Controls.Add(this.txtb_password2);
 			this.Controls.Add(this.tv_password);
@@ -150,7 +141,6 @@
 		private System.Windows.Forms.Label tv_password;
 		private System.Windows.Forms.MaskedTextBox txtb_password2;
 		private System.Windows.Forms.CheckBox cb_admin;
-		private System.Windows.Forms.CheckBox cb_actif;
 		private System.Windows.Forms.Button btn_Submit;
 	}
 }
