@@ -40,7 +40,7 @@ namespace Gestinv
 
 		private void btn_voir_stocks_Click(object sender, EventArgs e)
 		{
-			Stock_admin fStockUserAdmin = new Stock_admin();
+			Stock_admin fStockUserAdmin = new Stock_admin(CurrentUser.Id);
 			fStockUserAdmin.Show();
 		}
 

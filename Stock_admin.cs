@@ -12,9 +12,24 @@ namespace Gestinv
 {
     public partial class Stock_admin : Form
     {
-        public Stock_admin()
+        ServiceSynchro.User CurrentUser = new ServiceSynchro.User();
+        public Stock_admin(int idCurrentUser)
         {
             InitializeComponent();
+            ServiceSynchro.ServiceSynchroClient ssc = new ServiceSynchro.ServiceSynchroClient();
+            ServiceSynchro.User[] allUser = ssc.GetUsers(false);
+            foreach (ServiceSynchro.User user in allUser)
+            {
+                if (user.Id == idCurrentUser)
+                {
+                    CurrentUser = user;
+                }
+            }
+        }
+
+        private void add_family_Click(object sender, EventArgs e)
+        {
+            AddFamily addfamily = new AddFamily(CurrentUser.Id);
         }
     }
 }

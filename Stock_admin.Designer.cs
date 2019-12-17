@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Stock_admin));
-            this.cbbox_gestion_stocks_family = new System.Windows.Forms.ComboBox();
+            this.combobox_families = new System.Windows.Forms.ComboBox();
             this.btn_gestion_stocks_save = new System.Windows.Forms.Button();
             this.add_family = new System.Windows.Forms.Button();
             this.delete_family = new System.Windows.Forms.Button();
@@ -41,15 +41,15 @@
             this.btn_gestion_stocks_back = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // cbbox_gestion_stocks_family
+            // combobox_families
             // 
-            this.cbbox_gestion_stocks_family.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbbox_gestion_stocks_family.FormattingEnabled = true;
-            this.cbbox_gestion_stocks_family.Location = new System.Drawing.Point(275, 130);
-            this.cbbox_gestion_stocks_family.Margin = new System.Windows.Forms.Padding(4);
-            this.cbbox_gestion_stocks_family.Name = "cbbox_gestion_stocks_family";
-            this.cbbox_gestion_stocks_family.Size = new System.Drawing.Size(481, 46);
-            this.cbbox_gestion_stocks_family.TabIndex = 0;
+            this.combobox_families.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.combobox_families.FormattingEnabled = true;
+            this.combobox_families.Location = new System.Drawing.Point(275, 130);
+            this.combobox_families.Margin = new System.Windows.Forms.Padding(4);
+            this.combobox_families.Name = "combobox_families";
+            this.combobox_families.Size = new System.Drawing.Size(481, 46);
+            this.combobox_families.TabIndex = 0;
             // 
             // btn_gestion_stocks_save
             // 
@@ -167,7 +167,7 @@
             this.Controls.Add(this.delete_family);
             this.Controls.Add(this.add_family);
             this.Controls.Add(this.btn_gestion_stocks_save);
-            this.Controls.Add(this.cbbox_gestion_stocks_family);
+            this.Controls.Add(this.combobox_families);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Stock_admin";
             this.Text = "Stock";
@@ -178,7 +178,7 @@
 
         #endregion
 
-        private System.Windows.Forms.ComboBox cbbox_gestion_stocks_family;
+        private System.Windows.Forms.ComboBox combobox_families;
         private System.Windows.Forms.Button btn_gestion_stocks_save;
         private System.Windows.Forms.Button add_family;
         private System.Windows.Forms.Button delete_family;
