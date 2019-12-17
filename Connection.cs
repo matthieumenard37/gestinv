@@ -53,13 +53,13 @@ namespace Gestinv
                     if (Allusers[iRow].Admin)
                     {
                         authen_state = true;
-                        MenuAdmin fMenuAdmin = new MenuAdmin();
+                        MenuAdmin fMenuAdmin = new MenuAdmin(Allusers[iRow].Id);
                         fMenuAdmin.Show();
                     }
                     else
                     {
                         authen_state = true;
-                        Stock_user fStockUser = new Stock_user();
+                        Stock_user fStockUser = new Stock_user(Allusers[iRow].Id);
                         fStockUser.Show();
                     }
                 }
@@ -85,10 +85,5 @@ namespace Gestinv
 
         }
 
-		private void button1_Click_1(object sender, EventArgs e)
-		{
-			UsersManagement fum = new UsersManagement();
-			fum.ShowDialog();
-		}
 	}
 }
