@@ -69,6 +69,8 @@
     <Compile Include="AddUser.Designer.cs">
       <DependentUpon>AddUser.cs</DependentUpon>
     </Compile>
+    <Compile Include="Classes\Article.cs" />
+    <Compile Include="Classes\Family.cs" />
     <Compile Include="Classes\md5.cs" />
     <Compile Include="Classes\Synchro.cs" />
     <Compile Include="Connected Services\ServiceSynchro\Reference.cs">
