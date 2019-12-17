@@ -13,6 +13,7 @@ namespace Gestinv
 {
 	public partial class UpdateUser : Form
 	{
+		//(public) ServiceSynchro.ServiceSynchroClient sscPublic = new ServiceSynchro.ServiceSynchroClient();
 		ServiceSynchro.User _u = null;
 		ServiceSynchro.User CurrentUser = null;
 		public UpdateUser(int idUser, int idCurrentUser)
@@ -52,6 +53,11 @@ namespace Gestinv
 			// txtb_Login txtb_password1 txtb_password2 cb_admin cb_actif btn_Submit
 			txtb_Login.Text = _u.Login;
 			cb_admin.Checked = _u.Admin;
+			//Désactive le bouton supprimer user si il concerne l'utilisateur connecté
+			if (_u.Id == CurrentUser.Id)
+			{
+				btn_delete.Enabled = false;
+			}
 		}
 
 		private void btn_Submit_Click(object sender, EventArgs e)
@@ -84,6 +90,34 @@ namespace Gestinv
 			else
 				MessageBox.Show("Une erreur est survenue.");
 			this.Close();
+		}
+
+		private void btn_delete_Click(object sender, EventArgs e)
+		{
+			if (_u.Id == CurrentUser.Id)
+			{
+				MessageBox.Show("AVERTISSEMENT: Vous ne pouvez pas supprimer votre compte.");
+			}
+			else
+			{
+				DialogResult dialogR = MessageBox.Show("Êtes-vous sûr de vouloir supprimer " + _u.Login + " ?", "Supprimer Utilisateur", MessageBoxButtons.YesNo);
+				if (dialogR == DialogResult.Yes)
+				{
+					ServiceSynchro.ServiceSynchroClient ssc = new ServiceSynchro.ServiceSynchroClient();
+					int SynchroId = ssc.CreateSynchro(CurrentUser.Id);
+					if (ssc.DelUser(_u.Id, SynchroId) == 1)
+					{
+						MessageBox.Show("L'utilisateur a bien été supprimé");
+						this.Close();
+					}
+					else
+					{
+						MessageBox.Show("Une erreur est survenue");
+						this.Close();
+					}
+				}
+				//else ? if (dialogR == DialogResult.Yes){}
+			}
 		}
 	}
 }
