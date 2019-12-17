@@ -62,5 +62,19 @@ namespace Gestinv
 		{
 
 		}
+
+		private void btn_updateUser_Click(object sender, EventArgs e)
+		{
+
+		}
+
+		private void dtgv_usersList_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+		{
+			if (e.RowIndex > -1)
+			{
+				UpdateUser FUpdateUser = new UpdateUser((int)dtgv_usersList["Id", e.RowIndex].Value);
+				FUpdateUser.Show();
+			}
+		}
 	}
 }

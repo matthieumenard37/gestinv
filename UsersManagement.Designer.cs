@@ -47,6 +47,11 @@
 			// 
 			// dtgv_usersList
 			// 
+			this.dtgv_usersList.AllowUserToAddRows = false;
+			this.dtgv_usersList.AllowUserToDeleteRows = false;
+			this.dtgv_usersList.AllowUserToOrderColumns = true;
+			this.dtgv_usersList.AllowUserToResizeColumns = false;
+			this.dtgv_usersList.AllowUserToResizeRows = false;
 			this.dtgv_usersList.Anchor = System.Windows.Forms.AnchorStyles.Left;
 			this.dtgv_usersList.BackgroundColor = System.Drawing.SystemColors.Control;
 			this.dtgv_usersList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -56,22 +61,25 @@
             this.Password,
             this.Actif,
             this.Admin});
-			this.dtgv_usersList.Location = new System.Drawing.Point(282, 142);
+			this.dtgv_usersList.Location = new System.Drawing.Point(30, 193);
 			this.dtgv_usersList.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
 			this.dtgv_usersList.Name = "dtgv_usersList";
+			this.dtgv_usersList.ReadOnly = true;
 			this.dtgv_usersList.RowHeadersWidth = 82;
 			this.dtgv_usersList.RowTemplate.Height = 24;
-			this.dtgv_usersList.Size = new System.Drawing.Size(892, 441);
+			this.dtgv_usersList.Size = new System.Drawing.Size(1190, 441);
 			this.dtgv_usersList.TabIndex = 0;
 			this.dtgv_usersList.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgv_usersList_CellContentClick);
+			this.dtgv_usersList.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgv_usersList_CellDoubleClick);
 			// 
 			// Nom
 			// 
 			this.Nom.DataPropertyName = "Login";
-			this.Nom.HeaderText = "Nom";
+			this.Nom.HeaderText = "Login";
 			this.Nom.MinimumWidth = 10;
 			this.Nom.Name = "Nom";
-			this.Nom.Width = 200;
+			this.Nom.ReadOnly = true;
+			this.Nom.Width = 250;
 			// 
 			// Id
 			// 
@@ -79,8 +87,9 @@
 			this.Id.HeaderText = "Id";
 			this.Id.MinimumWidth = 10;
 			this.Id.Name = "Id";
+			this.Id.ReadOnly = true;
 			this.Id.Visible = false;
-			this.Id.Width = 200;
+			this.Id.Width = 10;
 			// 
 			// Password
 			// 
@@ -88,6 +97,7 @@
 			this.Password.HeaderText = "Password";
 			this.Password.MinimumWidth = 10;
 			this.Password.Name = "Password";
+			this.Password.ReadOnly = true;
 			this.Password.Visible = false;
 			this.Password.Width = 200;
 			// 
@@ -98,10 +108,11 @@
 			this.Actif.HeaderText = "Actif";
 			this.Actif.MinimumWidth = 10;
 			this.Actif.Name = "Actif";
+			this.Actif.ReadOnly = true;
 			this.Actif.Resizable = System.Windows.Forms.DataGridViewTriState.True;
 			this.Actif.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Programmatic;
 			this.Actif.TrueValue = "true";
-			this.Actif.Width = 200;
+			this.Actif.Width = 55;
 			// 
 			// Admin
 			// 
@@ -110,10 +121,11 @@
 			this.Admin.HeaderText = "Admin";
 			this.Admin.MinimumWidth = 10;
 			this.Admin.Name = "Admin";
+			this.Admin.ReadOnly = true;
 			this.Admin.Resizable = System.Windows.Forms.DataGridViewTriState.True;
 			this.Admin.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
 			this.Admin.TrueValue = "true";
-			this.Admin.Width = 200;
+			this.Admin.Width = 55;
 			// 
 			// btn_logout
 			// 
@@ -137,7 +149,7 @@
 			this.btn_addUser.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
 			this.btn_addUser.Cursor = System.Windows.Forms.Cursors.Hand;
 			this.btn_addUser.ForeColor = System.Drawing.Color.Transparent;
-			this.btn_addUser.Location = new System.Drawing.Point(546, 597);
+			this.btn_addUser.Location = new System.Drawing.Point(569, 735);
 			this.btn_addUser.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
 			this.btn_addUser.Name = "btn_addUser";
 			this.btn_addUser.Size = new System.Drawing.Size(96, 92);
@@ -153,7 +165,7 @@
 			this.btn_deleteUser.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
 			this.btn_deleteUser.Cursor = System.Windows.Forms.Cursors.Hand;
 			this.btn_deleteUser.ForeColor = System.Drawing.Color.Transparent;
-			this.btn_deleteUser.Location = new System.Drawing.Point(754, 597);
+			this.btn_deleteUser.Location = new System.Drawing.Point(777, 735);
 			this.btn_deleteUser.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
 			this.btn_deleteUser.Name = "btn_deleteUser";
 			this.btn_deleteUser.Size = new System.Drawing.Size(96, 92);
@@ -168,12 +180,13 @@
 			this.btn_updateUser.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
 			this.btn_updateUser.Cursor = System.Windows.Forms.Cursors.Hand;
 			this.btn_updateUser.ForeColor = System.Drawing.Color.Transparent;
-			this.btn_updateUser.Location = new System.Drawing.Point(964, 597);
+			this.btn_updateUser.Location = new System.Drawing.Point(987, 735);
 			this.btn_updateUser.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
 			this.btn_updateUser.Name = "btn_updateUser";
 			this.btn_updateUser.Size = new System.Drawing.Size(96, 92);
 			this.btn_updateUser.TabIndex = 5;
 			this.btn_updateUser.UseVisualStyleBackColor = false;
+			this.btn_updateUser.Click += new System.EventHandler(this.btn_updateUser_Click);
 			// 
 			// lbl_titreUsersManagement
 			// 
@@ -192,7 +205,7 @@
 			// 
 			this.cb_filter.AutoSize = true;
 			this.cb_filter.Font = new System.Drawing.Font("Mongolian Baiti", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.cb_filter.Location = new System.Drawing.Point(1184, 259);
+			this.cb_filter.Location = new System.Drawing.Point(1237, 273);
 			this.cb_filter.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
 			this.cb_filter.Name = "cb_filter";
 			this.cb_filter.Size = new System.Drawing.Size(401, 34);
@@ -206,7 +219,7 @@
 			this.label2.AutoSize = true;
 			this.label2.BackColor = System.Drawing.Color.Transparent;
 			this.label2.Font = new System.Drawing.Font("Mongolian Baiti", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label2.Location = new System.Drawing.Point(1184, 208);
+			this.label2.Location = new System.Drawing.Point(1274, 204);
 			this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
 			this.label2.Name = "label2";
 			this.label2.Size = new System.Drawing.Size(130, 46);
@@ -219,7 +232,7 @@
 			this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-			this.ClientSize = new System.Drawing.Size(1623, 703);
+			this.ClientSize = new System.Drawing.Size(1669, 841);
 			this.Controls.Add(this.label2);
 			this.Controls.Add(this.cb_filter);
 			this.Controls.Add(this.btn_logout);
