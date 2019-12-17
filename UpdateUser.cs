@@ -67,10 +67,14 @@ namespace Gestinv
 				MessageBox.Show("Veuillez renseigner deux mdp identiques");
 			}else
 				MessageBox.Show("Le mot de passe n'a pas été modifié");
-			_u.Admin = cb_admin.Checked;
+			if (_u.Id == CurrentUser.Id)
+			{
+				_u.Admin = true;
+				MessageBox.Show("AVERTISSEMENT: Vous ne pouvez pas rétrograder vos droits utilisateurs.");
+			}else
+				_u.Admin = cb_admin.Checked;
 
 			ServiceSynchro.ServiceSynchroClient ssc = new ServiceSynchro.ServiceSynchroClient();
-
 			//creer la synchro
 			int SynchroId = ssc.CreateSynchro(CurrentUser.Id);
 			if (ssc.SetUser(_u.Id, _u, SynchroId) == 1)
