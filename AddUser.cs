@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Gestinv.Classes;
 
 namespace Gestinv
 {
@@ -35,6 +36,16 @@ namespace Gestinv
 		private void btn_AddUser_Click(object sender, EventArgs e)
 		{
 			//txtBox_Name , txtBox_Password , cb_admin , btn_Add
+			string uLogin = txtBox_Name.Text;
+			string uPassw = txtBox_Password.Text;
+			bool uAdmin = cb_admin.Checked;
+			ServiceSynchro.User newUser = new ServiceSynchro.User();
+			newUser.Login = uLogin;
+			newUser.Password = uPassw;
+			newUser.Admin = uAdmin;
+			newUser.State = true;
+			newUser.Id = -1;
+			Gestinv.Classes.User.AddUser(newUser);
 		}
 	}
 }
