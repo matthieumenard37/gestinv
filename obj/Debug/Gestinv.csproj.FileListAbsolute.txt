@@ -38,3 +38,7 @@ C:\Users\matth\OneDrive\Documents\GitHub\gestinv\obj\Debug\Gestinv.UsersManageme
 \\vmware-host\Shared Folders\Documents\GitHub\gestinv\obj\Debug\Gestinv.csproj.GenerateResource.cache
 \\vmware-host\Shared Folders\Documents\GitHub\gestinv\obj\Debug\Gestinv.exe
 \\vmware-host\Shared Folders\Documents\GitHub\gestinv\obj\Debug\Gestinv.pdb
+D:\Users\UlDev\CESI - Projet Inventaire\gestinv\obj\Debug\Gestinv.AddUser.resources
+D:\Users\UlDev\CESI - Projet Inventaire\gestinv\obj\Debug\Gestinv.LogsView.resources
+D:\Users\UlDev\CESI - Projet Inventaire\gestinv\obj\Debug\Gestinv.MenuAdmin.resources
+D:\Users\UlDev\CESI - Projet Inventaire\gestinv\obj\Debug\Gestinv.UsersManagement.resources
