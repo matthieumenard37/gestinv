@@ -46,7 +46,7 @@ namespace Gestinv
             string inputPasswordMd5 = md5.CalculateMD5Hash(inputPassword).ToLower();
             bool authen_state = false;
             var AllusersLength = Allusers.GetLength(0);
-            for (int iRow = 0; iRow < AllusersLength-1; iRow++ )
+            for (int iRow = 0; iRow < AllusersLength; iRow++ )
             {
                 if ((Allusers[iRow].Login == inputLogin) && ((Allusers[iRow].Password == inputPasswordMd5)))
                 {
