@@ -14,7 +14,8 @@ namespace Gestinv
 	public partial class UpdateUser : Form
 	{
 		ServiceSynchro.User _u = null;
-		public UpdateUser(int idUser)
+		ServiceSynchro.User CurrentUser = null;
+		public UpdateUser(int idUser, int idCurrentUser)
 		{
 			InitializeComponent(); 
 			ServiceSynchro.ServiceSynchroClient ssc = new ServiceSynchro.ServiceSynchroClient();
@@ -24,6 +25,10 @@ namespace Gestinv
 				if (user.Id == idUser)
 				{
 					_u = user;
+				}
+				if (user.Id == idCurrentUser)
+				{
+					CurrentUser = user;
 				}
 			}
 
@@ -65,7 +70,10 @@ namespace Gestinv
 			_u.Admin = cb_admin.Checked;
 
 			ServiceSynchro.ServiceSynchroClient ssc = new ServiceSynchro.ServiceSynchroClient();
-			if (ssc.SetUser(_u.Id, _u, 7) == 1)
+
+			//creer la synchro
+			int SynchroId = ssc.CreateSynchro(CurrentUser.Id);
+			if (ssc.SetUser(_u.Id, _u, SynchroId) == 1)
 			{
 				MessageBox.Show("L'utilisateur " + _u.Login + " a été mis à jour avec succès.");
 			}
