@@ -59,7 +59,7 @@ namespace Gestinv
                     else
                     {
                         authen_state = true;
-                        Stock_user fStockUser = new Stock_user();
+                        Stock_user fStockUser = new Stock_user(Allusers[iRow].Id);
                         fStockUser.Show();
                     }
                 }

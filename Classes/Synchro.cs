@@ -40,14 +40,14 @@ namespace Gestinv.Classes
             return Articles;
         }
 
-        public static void Upload(ServiceSynchro.Article[] Articles_Local)
+        public static void Upload(ServiceSynchro.Article[] Articles_Local, int UserID)
         {
 
             ServiceSynchro.ServiceSynchroClient ssc = new ServiceSynchro.ServiceSynchroClient();
             ServiceSynchro.Article[] Articles_Remote = DownloadArticles();
 
             //initie la synchro
-            int synchroID = ssc.CreateSynchro(7);
+            int synchroID = ssc.CreateSynchro(UserID);
 
             //parcours chaque article en ligne
             foreach (ServiceSynchro.Article articleEnCours_Remote in Articles_Remote)

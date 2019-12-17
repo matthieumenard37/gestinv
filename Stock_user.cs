@@ -13,12 +13,23 @@ namespace Gestinv
 {
     public partial class Stock_user : Form
     {
-        bool nonNumber = true;
+        ServiceSynchro.User CurrentUser = new ServiceSynchro.User();
         //definition des variables globales qui vont contenir la bdd
         ServiceSynchro.Family[] Families = new ServiceSynchro.Family[] { }; //uniquement pour la correspondance nom-id des familles
         ServiceSynchro.Article[] Articles = new ServiceSynchro.Article[] { }; //tous les articles (actifs)
-        public Stock_user()
+        public Stock_user(int idUser)
         {
+            //chargement du CurrentUser
+            ServiceSynchro.ServiceSynchroClient ssc = new ServiceSynchro.ServiceSynchroClient();
+            ServiceSynchro.User[] Allusers = ssc.GetUsers(true);
+            foreach (ServiceSynchro.User user in Allusers)
+            {
+                if (user.Id == idUser)
+                {
+                    CurrentUser = user;
+                }
+            }
+
             //téléchargement des données de la bdd au lancement
             Families = Synchro.DownloadFamilies();
             Articles = Synchro.DownloadArticles();
@@ -86,12 +97,11 @@ namespace Gestinv
 
         private void input_quantity_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
         {
-
         }
 
         private void btn_synchro_Click(object sender, EventArgs e)
         {
-            Synchro.Upload(Articles);
+            Synchro.Upload(Articles, CurrentUser.Id);
             this.Close();
         }
     }
