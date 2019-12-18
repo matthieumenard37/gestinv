@@ -117,6 +117,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UpdateArticle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateArticle.Designer.cs">
+      <DependentUpon>UpdateArticle.cs</DependentUpon>
+    </Compile>
     <Compile Include="UpdateFamily.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -165,6 +171,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="UpdateArticle.resx">
+      <DependentUpon>UpdateArticle.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UpdateFamily.resx">
       <DependentUpon>UpdateFamily.cs</DependentUpon>
     </EmbeddedResource>

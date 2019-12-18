@@ -67,5 +67,14 @@ namespace Gestinv
                 FUpdateFamily.Show();
             }
         }
+
+        private void dtgv_articles_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex > -1)
+            {
+                UpdateArticle FUpdateArticle = new UpdateArticle((int)dtgv_articles["Id", e.RowIndex].Value, CurrentUser.Id, IdSynchro, (int)dtgv_articles[0, e.RowIndex].Value);
+                FUpdateArticle.Show();
+            }
+        }
     }
 }

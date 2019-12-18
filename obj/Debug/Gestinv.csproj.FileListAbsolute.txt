@@ -1,7 +1,6 @@
 D:\Users\UlDev\CESI - Projet Inventaire\gestinv\bin\Debug\Gestinv.exe.config
 D:\Users\UlDev\CESI - Projet Inventaire\gestinv\bin\Debug\Gestinv.exe
 D:\Users\UlDev\CESI - Projet Inventaire\gestinv\bin\Debug\Gestinv.pdb
-D:\Users\UlDev\CESI - Projet Inventaire\gestinv\obj\Debug\Gestinv.csprojAssemblyReference.cache
 D:\Users\UlDev\CESI - Projet Inventaire\gestinv\obj\Debug\Gestinv.Properties.Resources.resources
 D:\Users\UlDev\CESI - Projet Inventaire\gestinv\obj\Debug\Gestinv.csproj.GenerateResource.cache
 D:\Users\UlDev\CESI - Projet Inventaire\gestinv\obj\Debug\Gestinv.csproj.CoreCompileInputs.cache
@@ -49,3 +48,7 @@ C:\Users\matth\OneDrive\Documents\GitHub\gestinv\obj\Debug\Gestinv.AddUser.resou
 C:\Users\matth\OneDrive\Documents\GitHub\gestinv\obj\Debug\Gestinv.UpdateUser.resources
 \\vmware-host\Shared Folders\Documents\GitHub\gestinv\obj\Debug\Gestinv.AddFamily.resources
 C:\Users\matth\OneDrive\Documents\GitHub\gestinv\obj\Debug\Gestinv.UpdateFamily.resources
+D:\Users\UlDev\CESI - Projet Inventaire\gestinv\obj\Debug\Gestinv.AddFamily.resources
+D:\Users\UlDev\CESI - Projet Inventaire\gestinv\obj\Debug\Gestinv.UpdateFamily.resources
+D:\Users\UlDev\CESI - Projet Inventaire\gestinv\obj\Debug\Gestinv.csprojAssemblyReference.cache
+D:\Users\UlDev\CESI - Projet Inventaire\gestinv\obj\Debug\Gestinv.UpdateArticle.resources
