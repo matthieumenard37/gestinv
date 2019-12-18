@@ -87,6 +87,14 @@ namespace Gestinv
                 if (ssc.DelFamily(_f.Id, IdSynchro) == 1)
                 {
                     MessageBox.Show("La famille a bien été supprimée");
+                    FStockAdmin.combobox_families.Items.Clear();
+                    ServiceSynchro.Family[] AllFamilies = ssc.GetFamilies(true);
+                    foreach (ServiceSynchro.Family family in AllFamilies)
+                    {
+                        FStockAdmin.combobox_families.Items.Add(family);
+                    }
+                    FStockAdmin.dtgv_articles.DataSource = null;
+                    FStockAdmin.combobox_families.Text = "";
                     this.Close();
                 }
                 else
@@ -96,6 +104,11 @@ namespace Gestinv
                 }
             }
             //else ? if (dialogR == DialogResult.Yes){}
+        }
+
+        private void lbl_name_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -32,7 +32,6 @@
             this.input_family = new System.Windows.Forms.ComboBox();
             this.input_article = new System.Windows.Forms.ComboBox();
             this.lbl_gestion_inventaire = new System.Windows.Forms.Label();
-            this.btn_inventaire_deconnect = new System.Windows.Forms.Button();
             this.btn_synchro = new System.Windows.Forms.Button();
             this.lbl_family = new System.Windows.Forms.Label();
             this.lbl_article = new System.Windows.Forms.Label();
@@ -72,16 +71,6 @@
             this.lbl_gestion_inventaire.TabIndex = 8;
             this.lbl_gestion_inventaire.Text = "GESTION D\'INVENTAIRE";
             this.lbl_gestion_inventaire.Click += new System.EventHandler(this.label2_Click);
-            // 
-            // btn_inventaire_deconnect
-            // 
-            this.btn_inventaire_deconnect.Location = new System.Drawing.Point(506, 10);
-            this.btn_inventaire_deconnect.Margin = new System.Windows.Forms.Padding(2);
-            this.btn_inventaire_deconnect.Name = "btn_inventaire_deconnect";
-            this.btn_inventaire_deconnect.Size = new System.Drawing.Size(100, 35);
-            this.btn_inventaire_deconnect.TabIndex = 9;
-            this.btn_inventaire_deconnect.Text = "Déconnexion";
-            this.btn_inventaire_deconnect.UseVisualStyleBackColor = true;
             // 
             // btn_synchro
             // 
@@ -153,7 +142,6 @@
             this.Controls.Add(this.lbl_article);
             this.Controls.Add(this.lbl_family);
             this.Controls.Add(this.btn_synchro);
-            this.Controls.Add(this.btn_inventaire_deconnect);
             this.Controls.Add(this.lbl_gestion_inventaire);
             this.Controls.Add(this.input_article);
             this.Controls.Add(this.input_family);
@@ -169,7 +157,6 @@
         private System.Windows.Forms.ComboBox input_family;
         private System.Windows.Forms.ComboBox input_article;
         private System.Windows.Forms.Label lbl_gestion_inventaire;
-        private System.Windows.Forms.Button btn_inventaire_deconnect;
         private System.Windows.Forms.Button btn_synchro;
         private System.Windows.Forms.Label lbl_family;
         private System.Windows.Forms.Label lbl_article;
