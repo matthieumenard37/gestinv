@@ -50,7 +50,13 @@ namespace Gestinv
 				newUser.State = true;
 				newUser.Id = -1;
 				ServiceSynchro.ServiceSynchroClient ssc = new ServiceSynchro.ServiceSynchroClient();
-				ssc.SetUser(-1, newUser, IdSynchro);
+				if (ssc.SetUser(-1, newUser, IdSynchro) == 1)
+				{
+					MessageBox.Show("L'utilisateur a bien été ajouté");
+				}
+				else
+					MessageBox.Show("Une erreur est survenue");
+				this.Close();
 			}
 			else
 				MessageBox.Show("Les deux mdp ne correspondent pas");
