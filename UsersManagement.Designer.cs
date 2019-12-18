@@ -170,6 +170,7 @@
 			this.btn_deleteUser.Size = new System.Drawing.Size(96, 92);
 			this.btn_deleteUser.TabIndex = 4;
 			this.btn_deleteUser.UseVisualStyleBackColor = false;
+			this.btn_deleteUser.Click += new System.EventHandler(this.btn_deleteUser_Click);
 			// 
 			// btn_updateUser
 			// 

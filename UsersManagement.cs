@@ -67,5 +67,10 @@ namespace Gestinv
 				FUpdateUser.Show();
 			}
 		}
+
+		private void btn_deleteUser_Click(object sender, EventArgs e)
+		{
+
+		}
 	}
 }
