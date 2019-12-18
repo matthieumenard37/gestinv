@@ -36,6 +36,7 @@
 			this.txtb_password2 = new System.Windows.Forms.MaskedTextBox();
 			this.cb_admin = new System.Windows.Forms.CheckBox();
 			this.btn_Submit = new System.Windows.Forms.Button();
+			this.btn_delete = new System.Windows.Forms.Button();
 			this.SuspendLayout();
 			// 
 			// lbl_titre
@@ -103,19 +104,34 @@
 			// 
 			// btn_Submit
 			// 
-			this.btn_Submit.Location = new System.Drawing.Point(320, 376);
+			this.btn_Submit.BackColor = System.Drawing.Color.ForestGreen;
+			this.btn_Submit.ForeColor = System.Drawing.Color.White;
+			this.btn_Submit.Location = new System.Drawing.Point(133, 356);
 			this.btn_Submit.Name = "btn_Submit";
-			this.btn_Submit.Size = new System.Drawing.Size(147, 52);
+			this.btn_Submit.Size = new System.Drawing.Size(303, 82);
 			this.btn_Submit.TabIndex = 8;
-			this.btn_Submit.Text = "Valider";
-			this.btn_Submit.UseVisualStyleBackColor = true;
+			this.btn_Submit.Text = "ENREGISTRER";
+			this.btn_Submit.UseVisualStyleBackColor = false;
 			this.btn_Submit.Click += new System.EventHandler(this.btn_Submit_Click);
+			// 
+			// btn_delete
+			// 
+			this.btn_delete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+			this.btn_delete.ForeColor = System.Drawing.Color.Transparent;
+			this.btn_delete.Location = new System.Drawing.Point(485, 356);
+			this.btn_delete.Name = "btn_delete";
+			this.btn_delete.Size = new System.Drawing.Size(303, 82);
+			this.btn_delete.TabIndex = 9;
+			this.btn_delete.Text = "SUPPRIMER UTILISATEUR";
+			this.btn_delete.UseVisualStyleBackColor = false;
+			this.btn_delete.Click += new System.EventHandler(this.btn_delete_Click);
 			// 
 			// UpdateUser
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(800, 450);
+			this.Controls.Add(this.btn_delete);
 			this.Controls.Add(this.btn_Submit);
 			this.Controls.Add(this.cb_admin);
 			this.Controls.Add(this.txtb_password2);
@@ -142,5 +158,6 @@
 		private System.Windows.Forms.MaskedTextBox txtb_password2;
 		private System.Windows.Forms.CheckBox cb_admin;
 		private System.Windows.Forms.Button btn_Submit;
+		private System.Windows.Forms.Button btn_delete;
 	}
 }
