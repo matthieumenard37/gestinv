@@ -14,7 +14,8 @@ namespace Gestinv
     public partial class UsersManagement : Form
     {
 		ServiceSynchro.User CurrentUser = new ServiceSynchro.User();
-		public UsersManagement(int IdCurrentUser)
+		int IdSynchro = 0;
+		public UsersManagement(int IdCurrentUser, int _IdSynchro)
         {
             InitializeComponent();
 			ServiceSynchro.ServiceSynchroClient ssc = new ServiceSynchro.ServiceSynchroClient();
@@ -27,6 +28,7 @@ namespace Gestinv
 					CurrentUser = user;
 				}
 			}
+			IdSynchro = _IdSynchro;
 		}
 
 		private void label1_Click(object sender, EventArgs e)
@@ -40,7 +42,7 @@ namespace Gestinv
 
 		private void btn_addUser_Click(object sender, EventArgs e)
 		{
-			AddUser adduser = new AddUser();
+			AddUser adduser = new AddUser(IdSynchro);
 			adduser.Show();
 		}
 
@@ -63,7 +65,7 @@ namespace Gestinv
 		{
 			if (e.RowIndex > -1)
 			{
-				UpdateUser FUpdateUser = new UpdateUser((int)dtgv_usersList["Id", e.RowIndex].Value, CurrentUser.Id);
+				UpdateUser FUpdateUser = new UpdateUser((int)dtgv_usersList["Id", e.RowIndex].Value, CurrentUser.Id, IdSynchro);
 				FUpdateUser.Show();
 			}
 		}

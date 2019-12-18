@@ -13,7 +13,8 @@ namespace Gestinv
     public partial class Stock_admin : Form
     {
         ServiceSynchro.User CurrentUser = new ServiceSynchro.User();
-        public Stock_admin(int idCurrentUser)
+        int IdSynchro;
+        public Stock_admin(int idCurrentUser, int _IdSynchro)
         {
             InitializeComponent();
             ServiceSynchro.ServiceSynchroClient ssc = new ServiceSynchro.ServiceSynchroClient();
@@ -25,6 +26,7 @@ namespace Gestinv
                     CurrentUser = user;
                 }
             }
+            IdSynchro = _IdSynchro;
         }
 
         private void add_family_Click(object sender, EventArgs e)
@@ -33,7 +35,7 @@ namespace Gestinv
 
         private void add_family_Click_1(object sender, EventArgs e)
         {
-            AddFamily addfamily = new AddFamily(CurrentUser.Id);
+            AddFamily addfamily = new AddFamily(CurrentUser.Id, IdSynchro);
             addfamily.Show();
         }
 

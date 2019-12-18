@@ -13,9 +13,11 @@ namespace Gestinv
 {
 	public partial class AddUser : Form
 	{
-		public AddUser()
+		int IdSynchro = 0;
+		public AddUser(int _IdSynchro)
 		{
 			InitializeComponent();
+			IdSynchro = _IdSynchro;
 		}
 
 		private void label1_Click(object sender, EventArgs e)
@@ -47,7 +49,8 @@ namespace Gestinv
 				newUser.Admin = uAdmin;
 				newUser.State = true;
 				newUser.Id = -1;
-				Gestinv.Classes.User.AddUser(newUser);
+				ServiceSynchro.ServiceSynchroClient ssc = new ServiceSynchro.ServiceSynchroClient();
+				ssc.SetUser(-1, newUser, IdSynchro);
 			}
 			else
 				MessageBox.Show("Les deux mdp ne correspondent pas");
