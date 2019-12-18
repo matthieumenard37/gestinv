@@ -63,7 +63,7 @@ namespace Gestinv
         {
             if (combobox_families.SelectedItem != null)
             {
-                UpdateFamily FUpdateFamily = new UpdateFamily(((ServiceSynchro.Family)combobox_families.SelectedItem).Id, CurrentUser.Id, IdSynchro);
+                UpdateFamily FUpdateFamily = new UpdateFamily(((ServiceSynchro.Family)combobox_families.SelectedItem).Id, CurrentUser.Id, IdSynchro, this);
                 FUpdateFamily.Show();
             }
         }
@@ -72,7 +72,7 @@ namespace Gestinv
         {
             if (e.RowIndex > -1)
             {
-                UpdateArticle FUpdateArticle = new UpdateArticle((int)dtgv_articles["Id", e.RowIndex].Value, CurrentUser.Id, IdSynchro, (int)dtgv_articles[0, e.RowIndex].Value);
+                UpdateArticle FUpdateArticle = new UpdateArticle((int)dtgv_articles["Id", e.RowIndex].Value, CurrentUser.Id, IdSynchro, (int)dtgv_articles[0, e.RowIndex].Value, this);
                 FUpdateArticle.Show();
             }
         }

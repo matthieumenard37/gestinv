@@ -14,8 +14,9 @@ namespace Gestinv
     {
         ServiceSynchro.Article _a = null;
         ServiceSynchro.User CurrentUser = null;
+        Stock_admin StockAdmin = null;
         int IdSynchro = 0;
-        public UpdateArticle(int idArticle, int idCurrentUser, int _IdSynchro, int idFamily)
+        public UpdateArticle(int idArticle, int idCurrentUser, int _IdSynchro, int idFamily, Stock_admin _fStockAdmin)
         {
             InitializeComponent();
             ServiceSynchro.ServiceSynchroClient ssc = new ServiceSynchro.ServiceSynchroClient();
@@ -40,6 +41,8 @@ namespace Gestinv
             txtb_name.Text = _a.Name;
             txtb_location.Text = _a.LocationCode;
             nud_quantity.Value = _a.Quantity;
+
+            StockAdmin = _fStockAdmin;
 
 
             ServiceSynchro.Family[] Families = ssc.GetFamilies(true);
@@ -78,6 +81,14 @@ namespace Gestinv
             if (ssc.SetArticle(_a.Id, _a, IdSynchro) == 1)
             {
                 MessageBox.Show("L'article " + _a.Name + " a été mis à jour avec succès.");
+                StockAdmin.dtgv_articles.DataSource = ssc.GetArticles(_a.FamilyId, true);
+                foreach (ServiceSynchro.Family family in StockAdmin.combobox_families.Items)
+                {
+                    if (family.Id == _a.FamilyId)
+                    {
+                        StockAdmin.combobox_families.SelectedItem = family;
+                    }
+                }
             }
             else
                 MessageBox.Show("Une erreur est survenue.");

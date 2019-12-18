@@ -174,7 +174,7 @@
 
         #endregion
 
-        private System.Windows.Forms.ComboBox combobox_families;
+        public System.Windows.Forms.ComboBox combobox_families;
         private System.Windows.Forms.Button btn_gestion_stocks_save;
         private System.Windows.Forms.Button add_family;
         private System.Windows.Forms.Button modify_family;
@@ -183,6 +183,6 @@
         private System.Windows.Forms.Button btn_gestion_stocks_deconnect;
         private System.Windows.Forms.Button btn_gestion_stocks_back;
         private System.Windows.Forms.Label lbl_family;
-        private System.Windows.Forms.DataGridView dtgv_articles;
+        public System.Windows.Forms.DataGridView dtgv_articles;
     }
 }

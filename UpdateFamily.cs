@@ -12,10 +12,12 @@ namespace Gestinv
 {
     public partial class UpdateFamily : Form
     {
+
         ServiceSynchro.Family _f = null;
         ServiceSynchro.User CurrentUser = null;
         int IdSynchro = 0;
-        public UpdateFamily(int idFamily, int idCurrentUser, int _IdSynchro)
+        Stock_admin FStockAdmin;
+        public UpdateFamily(int idFamily, int idCurrentUser, int _IdSynchro, Stock_admin _FStockAdmin)
         {
             InitializeComponent();
 
@@ -41,6 +43,8 @@ namespace Gestinv
 
             IdSynchro = _IdSynchro;
 
+            FStockAdmin = _FStockAdmin;
+
             lbl_titre.Text += " " + _f.Name;
         }
 
@@ -54,6 +58,20 @@ namespace Gestinv
             if (ssc.SetFamily(_f.Id, _f, IdSynchro) == 1)
             {
                 MessageBox.Show("La famille " + _f.Name + " a été mise à jour avec succès.");
+                FStockAdmin.combobox_families.Items.Clear();
+                ServiceSynchro.Family[] AllFamilies = ssc.GetFamilies(true);
+                foreach (ServiceSynchro.Family family in AllFamilies)
+                {
+                    FStockAdmin.combobox_families.Items.Add(family);
+                }
+                
+                foreach (ServiceSynchro.Family family in FStockAdmin.combobox_families.Items)
+                {
+                    if (family.Id == _f.Id)
+                    {
+                        FStockAdmin.combobox_families.SelectedItem = family;
+                    }
+                }
             }
             else
                 MessageBox.Show("Une erreur est survenue.");
