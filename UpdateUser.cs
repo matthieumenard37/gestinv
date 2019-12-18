@@ -17,7 +17,15 @@ namespace Gestinv
 		ServiceSynchro.User _u = null;
 		ServiceSynchro.User CurrentUser = null;
 		int IdSynchro = 0;
-		public UpdateUser(int idUser, int idCurrentUser, int _IdSynchro)
+		Gestinv.UsersManagement FUsersManagement;
+		/// <summary>
+		/// 
+		/// </summary>
+		/// <param name="idUser"></param>
+		/// <param name="idCurrentUser"></param>
+		/// <param name="_IdSynchro"></param>
+		/// <param name="_FUsersManagement">Récupère l'instance de la fenêtre 'gestion utilisateur' pour mettre à jour la dataGridView</param>
+		public UpdateUser(int idUser, int idCurrentUser, int _IdSynchro, Gestinv.UsersManagement _FUsersManagement)
 		{
 			InitializeComponent(); 
 			ServiceSynchro.ServiceSynchroClient ssc = new ServiceSynchro.ServiceSynchroClient();
@@ -34,6 +42,7 @@ namespace Gestinv
 				}
 			}
 			IdSynchro = _IdSynchro;
+			FUsersManagement = _FUsersManagement;
 
 			lbl_titre.Text += " " + _u.Login;
 
@@ -86,6 +95,7 @@ namespace Gestinv
 			if (ssc.SetUser(_u.Id, _u, IdSynchro) == 1)
 			{
 				MessageBox.Show("L'utilisateur " + _u.Login + " a été mis à jour avec succès.");
+				FUsersManagement.dtgv_usersList.DataSource = ssc.GetUsers(true);
 			}
 			else
 				MessageBox.Show("Une erreur est survenue.");
@@ -107,6 +117,7 @@ namespace Gestinv
 					if (ssc.DelUser(_u.Id, IdSynchro) == 1)
 					{
 						MessageBox.Show("L'utilisateur a bien été supprimé");
+						FUsersManagement.dtgv_usersList.DataSource = ssc.GetUsers(true);
 						this.Close();
 					}
 					else

@@ -14,10 +14,17 @@ namespace Gestinv
 	public partial class AddUser : Form
 	{
 		int IdSynchro = 0;
-		public AddUser(int _IdSynchro)
+		UsersManagement FUsersManagement;
+		/// <summary>
+		/// 
+		/// </summary>
+		/// <param name="_IdSynchro"></param>
+		/// <param name="_FUsersManagement">Récupère l'instance de la fenêtre 'gestion utilisateur' pour mettre à jour la dataGridView</param>
+		public AddUser(int _IdSynchro, Gestinv.UsersManagement _FUsersManagement)
 		{
 			InitializeComponent();
 			IdSynchro = _IdSynchro;
+			FUsersManagement = _FUsersManagement;
 		}
 
 		private void label1_Click(object sender, EventArgs e)
@@ -53,6 +60,7 @@ namespace Gestinv
 				if (ssc.SetUser(-1, newUser, IdSynchro) == 1)
 				{
 					MessageBox.Show("L'utilisateur a bien été ajouté");
+					FUsersManagement.dtgv_usersList.DataSource = ssc.GetUsers(true);
 				}
 				else
 					MessageBox.Show("Une erreur est survenue");

@@ -42,7 +42,7 @@ namespace Gestinv
 
 		private void btn_addUser_Click(object sender, EventArgs e)
 		{
-			AddUser adduser = new AddUser(IdSynchro);
+			AddUser adduser = new AddUser(IdSynchro,this);
 			adduser.Show();
 		}
 
@@ -65,7 +65,7 @@ namespace Gestinv
 		{
 			if (e.RowIndex > -1)
 			{
-				UpdateUser FUpdateUser = new UpdateUser((int)dtgv_usersList["Id", e.RowIndex].Value, CurrentUser.Id, IdSynchro);
+				UpdateUser FUpdateUser = new UpdateUser((int)dtgv_usersList["Id", e.RowIndex].Value, CurrentUser.Id, IdSynchro, this);
 				FUpdateUser.Show();
 			}
 		}

@@ -239,7 +239,7 @@
 
 		#endregion
 
-		private System.Windows.Forms.DataGridView dtgv_usersList;
+		public System.Windows.Forms.DataGridView dtgv_usersList;
 		private System.Windows.Forms.Button btn_logout;
 		private System.Windows.Forms.Button btn_addUser;
 		private System.Windows.Forms.Button btn_deleteUser;
