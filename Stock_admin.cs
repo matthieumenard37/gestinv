@@ -27,6 +27,14 @@ namespace Gestinv
                 }
             }
             IdSynchro = _IdSynchro;
+            ServiceSynchro.Family[] Families = ssc.GetFamilies(true);
+
+            //chargement des familles dans la combo
+            foreach (ServiceSynchro.Family family in Families)
+            {
+                combobox_families.Items.Add(family);
+            }
+            combobox_families.DisplayMember = "name";
         }
 
         private void add_family_Click(object sender, EventArgs e)
@@ -41,7 +49,23 @@ namespace Gestinv
 
         private void combobox_families_SelectedIndexChanged(object sender, EventArgs e)
         {
+            ServiceSynchro.Family selectedFamily = (ServiceSynchro.Family)combobox_families.SelectedItem; 
+            ServiceSynchro.ServiceSynchroClient ssc = new ServiceSynchro.ServiceSynchroClient();
+            ServiceSynchro.Article[] articles = ssc.GetArticles(selectedFamily.Id, true);
+            dtgv_articles.DataSource = articles;
+            dtgv_articles.Columns[0].Visible = false;
+            dtgv_articles.Columns[1].Visible = false;
+            dtgv_articles.Columns[5].Visible = false;
+            // WARNING les index partent de la dernière de la colonne de la BDD !
+        }
 
+        private void modify_family_Click(object sender, EventArgs e)
+        {
+            if (combobox_families.SelectedItem != null)
+            {
+                UpdateFamily FUpdateFamily = new UpdateFamily(((ServiceSynchro.Family)combobox_families.SelectedItem).Id, CurrentUser.Id, IdSynchro);
+                FUpdateFamily.Show();
+            }
         }
     }
 }
