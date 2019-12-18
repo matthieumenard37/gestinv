@@ -36,9 +36,14 @@ namespace Gestinv
         private void btn_add_family_Click(object sender, EventArgs e)
         {
             _f.Name = txtBox_family_name.Text;
+            _f.State = true;
             ServiceSynchro.ServiceSynchroClient ssc = new ServiceSynchro.ServiceSynchroClient();
             int SynchroId = ssc.CreateSynchro(CurrentUser.Id);
-            ssc.SetFamily(-1, _f, SynchroId);
+            if (ssc.SetFamily(-1, _f, SynchroId) == 1)
+            {
+                MessageBox.Show("La famille a bien été créée");
+            }
+            txtBox_family_name.Text = string.Empty;
         }
     }
 }

@@ -29,7 +29,17 @@ namespace Gestinv
 
         private void add_family_Click(object sender, EventArgs e)
         {
+        }
+
+        private void add_family_Click_1(object sender, EventArgs e)
+        {
             AddFamily addfamily = new AddFamily(CurrentUser.Id);
+            addfamily.Show();
+        }
+
+        private void combobox_families_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

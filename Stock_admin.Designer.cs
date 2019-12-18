@@ -50,6 +50,7 @@
             this.combobox_families.Name = "combobox_families";
             this.combobox_families.Size = new System.Drawing.Size(481, 46);
             this.combobox_families.TabIndex = 0;
+            this.combobox_families.SelectedIndexChanged += new System.EventHandler(this.combobox_families_SelectedIndexChanged);
             // 
             // btn_gestion_stocks_save
             // 
@@ -72,6 +73,7 @@
             this.add_family.TabIndex = 4;
             this.add_family.Text = "+";
             this.add_family.UseVisualStyleBackColor = true;
+            this.add_family.Click += new System.EventHandler(this.add_family_Click_1);
             // 
             // delete_family
             // 
