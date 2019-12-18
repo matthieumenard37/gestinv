@@ -13,7 +13,8 @@ namespace Gestinv
 	public partial class MenuAdmin : Form
 	{
 		ServiceSynchro.User CurrentUser = new ServiceSynchro.User();
-		public MenuAdmin(int IdCurrentUser)
+		int IdSynchro = 0;
+		public MenuAdmin(int IdCurrentUser, int _IdSynchro)
 		{
 			InitializeComponent();
 			ServiceSynchro.ServiceSynchroClient ssc = new ServiceSynchro.ServiceSynchroClient();
@@ -25,6 +26,7 @@ namespace Gestinv
 					CurrentUser = user;
 				}
 			}
+			IdSynchro = _IdSynchro;
 		}
 
 		private void label1_Click(object sender, EventArgs e)
@@ -34,13 +36,13 @@ namespace Gestinv
 
 		private void btn_gerer_utilsateurs_Click(object sender, EventArgs e)
 		{
-			UsersManagement fUsersManagement = new UsersManagement(CurrentUser.Id);
+			UsersManagement fUsersManagement = new UsersManagement(CurrentUser.Id, IdSynchro);
 			fUsersManagement.Show();
 		}
 
 		private void btn_voir_stocks_Click(object sender, EventArgs e)
 		{
-			Stock_admin fStockUserAdmin = new Stock_admin(CurrentUser.Id);
+			Stock_admin fStockUserAdmin = new Stock_admin(CurrentUser.Id, IdSynchro);
 			fStockUserAdmin.Show();
 		}
 
