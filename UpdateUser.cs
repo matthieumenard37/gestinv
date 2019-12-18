@@ -16,7 +16,8 @@ namespace Gestinv
 		//(public) ServiceSynchro.ServiceSynchroClient sscPublic = new ServiceSynchro.ServiceSynchroClient();
 		ServiceSynchro.User _u = null;
 		ServiceSynchro.User CurrentUser = null;
-		public UpdateUser(int idUser, int idCurrentUser)
+		int IdSynchro = 0;
+		public UpdateUser(int idUser, int idCurrentUser, int _IdSynchro)
 		{
 			InitializeComponent(); 
 			ServiceSynchro.ServiceSynchroClient ssc = new ServiceSynchro.ServiceSynchroClient();
@@ -32,7 +33,7 @@ namespace Gestinv
 					CurrentUser = user;
 				}
 			}
-
+			IdSynchro = _IdSynchro;
 
 			lbl_titre.Text += " " + _u.Login;
 
@@ -82,8 +83,7 @@ namespace Gestinv
 
 			ServiceSynchro.ServiceSynchroClient ssc = new ServiceSynchro.ServiceSynchroClient();
 			//creer la synchro
-			int SynchroId = ssc.CreateSynchro(CurrentUser.Id);
-			if (ssc.SetUser(_u.Id, _u, SynchroId) == 1)
+			if (ssc.SetUser(_u.Id, _u, IdSynchro) == 1)
 			{
 				MessageBox.Show("L'utilisateur " + _u.Login + " a été mis à jour avec succès.");
 			}
@@ -104,8 +104,7 @@ namespace Gestinv
 				if (dialogR == DialogResult.Yes)
 				{
 					ServiceSynchro.ServiceSynchroClient ssc = new ServiceSynchro.ServiceSynchroClient();
-					int SynchroId = ssc.CreateSynchro(CurrentUser.Id);
-					if (ssc.DelUser(_u.Id, SynchroId) == 1)
+					if (ssc.DelUser(_u.Id, IdSynchro) == 1)
 					{
 						MessageBox.Show("L'utilisateur a bien été supprimé");
 						this.Close();

@@ -14,7 +14,8 @@ namespace Gestinv
     {
         ServiceSynchro.Family _f = new ServiceSynchro.Family();
         ServiceSynchro.User CurrentUser = null;
-        public AddFamily(int idCurrentUser)
+        int IdSynchro;
+        public AddFamily(int idCurrentUser, int _IdSynchro)
         {
             InitializeComponent();
             ServiceSynchro.ServiceSynchroClient ssc = new ServiceSynchro.ServiceSynchroClient();
@@ -26,6 +27,7 @@ namespace Gestinv
                     CurrentUser = user;
                 }
             }
+            IdSynchro = _IdSynchro;
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -38,8 +40,7 @@ namespace Gestinv
             _f.Name = txtBox_family_name.Text;
             _f.State = true;
             ServiceSynchro.ServiceSynchroClient ssc = new ServiceSynchro.ServiceSynchroClient();
-            int SynchroId = ssc.CreateSynchro(CurrentUser.Id);
-            if (ssc.SetFamily(-1, _f, SynchroId) == 1)
+            if (ssc.SetFamily(-1, _f, IdSynchro) == 1)
             {
                 MessageBox.Show("La famille a bien été créée");
             }

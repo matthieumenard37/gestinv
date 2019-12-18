@@ -53,7 +53,7 @@ namespace Gestinv
                     if (Allusers[iRow].Admin)
                     {
                         authen_state = true;
-                        MenuAdmin fMenuAdmin = new MenuAdmin(Allusers[iRow].Id);
+                        MenuAdmin fMenuAdmin = new MenuAdmin(Allusers[iRow].Id, ssc.CreateSynchro(Allusers[iRow].Id));
                         fMenuAdmin.Show();
                     }
                     else
