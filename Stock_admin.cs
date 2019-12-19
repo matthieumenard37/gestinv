@@ -79,7 +79,7 @@ namespace Gestinv
 
         private void btn_add_article_Click(object sender, EventArgs e)
         {
-            AddArticle addarticle = new AddArticle(CurrentUser.Id, IdSynchro);
+            AddArticle addarticle = new AddArticle(CurrentUser.Id, IdSynchro, this);
             addarticle.Show();
         }
     }

@@ -53,3 +53,5 @@ D:\Users\UlDev\CESI - Projet Inventaire\gestinv\obj\Debug\Gestinv.UpdateArticle.
 C:\Users\matth\OneDrive\Documents\GitHub\gestinv\obj\Debug\Gestinv.UpdateArticle.resources
 C:\Users\matth\OneDrive\Documents\GitHub\gestinv\obj\Debug\Gestinv.csprojAssemblyReference.cache
 C:\Users\matth\OneDrive\Documents\GitHub\gestinv\obj\Debug\Gestinv.AddArticle.resources
+D:\Users\UlDev\CESI - Projet Inventaire\gestinv\obj\Debug\Gestinv.csprojAssemblyReference.cache
+D:\Users\UlDev\CESI - Projet Inventaire\gestinv\obj\Debug\Gestinv.AddArticle.resources

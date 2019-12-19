@@ -15,7 +15,8 @@ namespace Gestinv
         ServiceSynchro.Article _a = new ServiceSynchro.Article();
         ServiceSynchro.User CurrentUser = null;
         int IdSynchro;
-        public AddArticle(int idCurrentUser, int _IdSynchro)
+        Stock_admin FStockAdmin = null;
+        public AddArticle(int idCurrentUser, int _IdSynchro, Stock_admin _FStockAdmin)
         {
             InitializeComponent();
             ServiceSynchro.ServiceSynchroClient ssc = new ServiceSynchro.ServiceSynchroClient();
@@ -29,6 +30,7 @@ namespace Gestinv
                 }
             }
             IdSynchro = _IdSynchro;
+            FStockAdmin = _FStockAdmin;
 
             //chargement des familles dans la combo
             foreach (ServiceSynchro.Family family in Families)
@@ -55,6 +57,16 @@ namespace Gestinv
             if (ssc.SetArticle(-1, _a, IdSynchro) == 1)
             {
                 MessageBox.Show("L'article a bien été créé");
+
+                foreach (ServiceSynchro.Family family in FStockAdmin.combobox_families.Items)
+                {
+                    if (_a.FamilyId == family.Id)
+                        {
+                            FStockAdmin.combobox_families.SelectedItem = family;
+                        }
+                }
+
+                FStockAdmin.dtgv_articles.DataSource = ssc.GetArticles(_a.FamilyId, true);
             }
 
             txtBox_article_name.Text = string.Empty;
