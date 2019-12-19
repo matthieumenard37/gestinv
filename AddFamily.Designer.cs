@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddFamily));
             this.lbl_add_family = new System.Windows.Forms.Label();
             this.txtBox_family_name = new System.Windows.Forms.TextBox();
             this.lbl_family_name = new System.Windows.Forms.Label();
@@ -38,7 +39,7 @@
             // 
             this.lbl_add_family.AutoSize = true;
             this.lbl_add_family.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_add_family.Location = new System.Drawing.Point(171, 9);
+            this.lbl_add_family.Location = new System.Drawing.Point(127, 9);
             this.lbl_add_family.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_add_family.Name = "lbl_add_family";
             this.lbl_add_family.Size = new System.Drawing.Size(158, 22);
@@ -50,7 +51,7 @@
             // 
             this.txtBox_family_name.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBox_family_name.Location = new System.Drawing.Point(131, 46);
-            this.txtBox_family_name.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtBox_family_name.Margin = new System.Windows.Forms.Padding(2);
             this.txtBox_family_name.Name = "txtBox_family_name";
             this.txtBox_family_name.Size = new System.Drawing.Size(250, 26);
             this.txtBox_family_name.TabIndex = 1;
@@ -68,10 +69,15 @@
             // 
             // btn_add_family
             // 
-            this.btn_add_family.Location = new System.Drawing.Point(394, 46);
-            this.btn_add_family.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_add_family.FlatAppearance.BorderSize = 0;
+            this.btn_add_family.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_add_family.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_add_family.ForeColor = System.Drawing.Color.White;
+            this.btn_add_family.Image = ((System.Drawing.Image)(resources.GetObject("btn_add_family.Image")));
+            this.btn_add_family.Location = new System.Drawing.Point(158, 89);
+            this.btn_add_family.Margin = new System.Windows.Forms.Padding(2);
             this.btn_add_family.Name = "btn_add_family";
-            this.btn_add_family.Size = new System.Drawing.Size(65, 26);
+            this.btn_add_family.Size = new System.Drawing.Size(83, 24);
             this.btn_add_family.TabIndex = 3;
             this.btn_add_family.Text = "Créer";
             this.btn_add_family.UseVisualStyleBackColor = true;
@@ -81,12 +87,13 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(484, 103);
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(393, 124);
             this.Controls.Add(this.btn_add_family);
             this.Controls.Add(this.lbl_family_name);
             this.Controls.Add(this.txtBox_family_name);
             this.Controls.Add(this.lbl_add_family);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "AddFamily";
             this.Text = "AddFamily";
             this.ResumeLayout(false);

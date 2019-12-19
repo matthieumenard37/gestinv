@@ -42,7 +42,7 @@
             // lbl_titre
             // 
             this.lbl_titre.AutoSize = true;
-            this.lbl_titre.Location = new System.Drawing.Point(174, 25);
+            this.lbl_titre.Location = new System.Drawing.Point(113, 20);
             this.lbl_titre.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_titre.Name = "lbl_titre";
             this.lbl_titre.Size = new System.Drawing.Size(44, 13);
@@ -53,18 +53,18 @@
             // txtb_Login
             // 
             this.txtb_Login.Location = new System.Drawing.Point(102, 58);
-            this.txtb_Login.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtb_Login.Margin = new System.Windows.Forms.Padding(2);
             this.txtb_Login.Name = "txtb_Login";
-            this.txtb_Login.Size = new System.Drawing.Size(102, 20);
+            this.txtb_Login.Size = new System.Drawing.Size(275, 20);
             this.txtb_Login.TabIndex = 1;
             // 
             // txtb_password1
             // 
             this.txtb_password1.Location = new System.Drawing.Point(102, 89);
-            this.txtb_password1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtb_password1.Margin = new System.Windows.Forms.Padding(2);
             this.txtb_password1.Name = "txtb_password1";
             this.txtb_password1.PasswordChar = '*';
-            this.txtb_password1.Size = new System.Drawing.Size(102, 20);
+            this.txtb_password1.Size = new System.Drawing.Size(132, 20);
             this.txtb_password1.TabIndex = 2;
             // 
             // tv_Login
@@ -90,18 +90,18 @@
             // 
             // txtb_password2
             // 
-            this.txtb_password2.Location = new System.Drawing.Point(225, 89);
-            this.txtb_password2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtb_password2.Location = new System.Drawing.Point(238, 89);
+            this.txtb_password2.Margin = new System.Windows.Forms.Padding(2);
             this.txtb_password2.Name = "txtb_password2";
             this.txtb_password2.PasswordChar = '*';
-            this.txtb_password2.Size = new System.Drawing.Size(102, 20);
+            this.txtb_password2.Size = new System.Drawing.Size(139, 20);
             this.txtb_password2.TabIndex = 5;
             // 
             // cb_admin
             // 
             this.cb_admin.AutoSize = true;
-            this.cb_admin.Location = new System.Drawing.Point(102, 139);
-            this.cb_admin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cb_admin.Location = new System.Drawing.Point(102, 122);
+            this.cb_admin.Margin = new System.Windows.Forms.Padding(2);
             this.cb_admin.Name = "cb_admin";
             this.cb_admin.Size = new System.Drawing.Size(55, 17);
             this.cb_admin.TabIndex = 6;
@@ -113,8 +113,8 @@
             // 
             this.btn_Submit.BackColor = System.Drawing.Color.ForestGreen;
             this.btn_Submit.ForeColor = System.Drawing.Color.White;
-            this.btn_Submit.Location = new System.Drawing.Point(28, 180);
-            this.btn_Submit.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_Submit.Location = new System.Drawing.Point(19, 155);
+            this.btn_Submit.Margin = new System.Windows.Forms.Padding(2);
             this.btn_Submit.Name = "btn_Submit";
             this.btn_Submit.Size = new System.Drawing.Size(152, 43);
             this.btn_Submit.TabIndex = 8;
@@ -126,8 +126,8 @@
             // 
             this.btn_delete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.btn_delete.ForeColor = System.Drawing.Color.Transparent;
-            this.btn_delete.Location = new System.Drawing.Point(225, 180);
-            this.btn_delete.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_delete.Location = new System.Drawing.Point(225, 155);
+            this.btn_delete.Margin = new System.Windows.Forms.Padding(2);
             this.btn_delete.Name = "btn_delete";
             this.btn_delete.Size = new System.Drawing.Size(152, 43);
             this.btn_delete.TabIndex = 9;
@@ -139,7 +139,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(400, 234);
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(400, 211);
             this.Controls.Add(this.btn_delete);
             this.Controls.Add(this.btn_Submit);
             this.Controls.Add(this.cb_admin);
@@ -149,7 +150,7 @@
             this.Controls.Add(this.txtb_password1);
             this.Controls.Add(this.txtb_Login);
             this.Controls.Add(this.lbl_titre);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "UpdateUser";
             this.Text = "UpdateUser";
             this.Load += new System.EventHandler(this.UpdateUser_Load);
