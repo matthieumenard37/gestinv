@@ -41,6 +41,7 @@
             // 
             // input_family
             // 
+            this.input_family.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.input_family.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.input_family.FormattingEnabled = true;
             this.input_family.Location = new System.Drawing.Point(128, 101);
@@ -51,6 +52,7 @@
             // 
             // input_article
             // 
+            this.input_article.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.input_article.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.input_article.FormattingEnabled = true;
             this.input_article.Location = new System.Drawing.Point(128, 169);
@@ -136,7 +138,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(628, 505);
+            this.ClientSize = new System.Drawing.Size(628, 376);
             this.Controls.Add(this.input_quantity);
             this.Controls.Add(this.lbl_quantity);
             this.Controls.Add(this.lbl_article);
