@@ -44,45 +44,49 @@
             // 
             // nud_quantity
             // 
-            this.nud_quantity.Location = new System.Drawing.Point(108, 122);
+            this.nud_quantity.Location = new System.Drawing.Point(144, 150);
+            this.nud_quantity.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.nud_quantity.Name = "nud_quantity";
-            this.nud_quantity.Size = new System.Drawing.Size(120, 20);
+            this.nud_quantity.Size = new System.Drawing.Size(160, 22);
             this.nud_quantity.TabIndex = 24;
             // 
             // lbl_quantity
             // 
             this.lbl_quantity.AutoSize = true;
-            this.lbl_quantity.Location = new System.Drawing.Point(54, 122);
+            this.lbl_quantity.Location = new System.Drawing.Point(72, 150);
+            this.lbl_quantity.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_quantity.Name = "lbl_quantity";
-            this.lbl_quantity.Size = new System.Drawing.Size(47, 13);
+            this.lbl_quantity.Size = new System.Drawing.Size(62, 17);
             this.lbl_quantity.TabIndex = 23;
             this.lbl_quantity.Text = "Quantité";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(53, 93);
+            this.label1.Location = new System.Drawing.Point(71, 114);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(39, 13);
+            this.label1.Size = new System.Drawing.Size(52, 17);
             this.label1.TabIndex = 22;
             this.label1.Text = "Famille";
             // 
             // comboBox_family
             // 
             this.comboBox_family.FormattingEnabled = true;
-            this.comboBox_family.Location = new System.Drawing.Point(108, 90);
+            this.comboBox_family.Location = new System.Drawing.Point(144, 111);
+            this.comboBox_family.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.comboBox_family.Name = "comboBox_family";
-            this.comboBox_family.Size = new System.Drawing.Size(231, 21);
+            this.comboBox_family.Size = new System.Drawing.Size(307, 24);
             this.comboBox_family.TabIndex = 21;
             // 
             // btn_delete
             // 
             this.btn_delete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.btn_delete.ForeColor = System.Drawing.Color.Transparent;
-            this.btn_delete.Location = new System.Drawing.Point(248, 182);
-            this.btn_delete.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_delete.Location = new System.Drawing.Point(331, 224);
+            this.btn_delete.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_delete.Name = "btn_delete";
-            this.btn_delete.Size = new System.Drawing.Size(152, 43);
+            this.btn_delete.Size = new System.Drawing.Size(203, 53);
             this.btn_delete.TabIndex = 20;
             this.btn_delete.Text = "SUPPRIMER ARTICLE";
             this.btn_delete.UseVisualStyleBackColor = false;
@@ -92,10 +96,10 @@
             // 
             this.btn_Submit.BackColor = System.Drawing.Color.ForestGreen;
             this.btn_Submit.ForeColor = System.Drawing.Color.White;
-            this.btn_Submit.Location = new System.Drawing.Point(72, 182);
-            this.btn_Submit.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_Submit.Location = new System.Drawing.Point(96, 224);
+            this.btn_Submit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_Submit.Name = "btn_Submit";
-            this.btn_Submit.Size = new System.Drawing.Size(152, 43);
+            this.btn_Submit.Size = new System.Drawing.Size(203, 53);
             this.btn_Submit.TabIndex = 19;
             this.btn_Submit.Text = "ENREGISTRER";
             this.btn_Submit.UseVisualStyleBackColor = false;
@@ -104,54 +108,52 @@
             // lbl_location
             // 
             this.lbl_location.AutoSize = true;
-            this.lbl_location.Location = new System.Drawing.Point(21, 153);
-            this.lbl_location.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbl_location.Location = new System.Drawing.Point(28, 188);
             this.lbl_location.Name = "lbl_location";
-            this.lbl_location.Size = new System.Drawing.Size(71, 13);
+            this.lbl_location.Size = new System.Drawing.Size(93, 17);
             this.lbl_location.TabIndex = 18;
             this.lbl_location.Text = "Emplacement";
             // 
             // lbl_name
             // 
             this.lbl_name.AutoSize = true;
-            this.lbl_name.Location = new System.Drawing.Point(54, 56);
-            this.lbl_name.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbl_name.Location = new System.Drawing.Point(72, 69);
             this.lbl_name.Name = "lbl_name";
-            this.lbl_name.Size = new System.Drawing.Size(29, 13);
+            this.lbl_name.Size = new System.Drawing.Size(37, 17);
             this.lbl_name.TabIndex = 17;
             this.lbl_name.Text = "Nom";
             // 
             // txtb_name
             // 
-            this.txtb_name.Location = new System.Drawing.Point(108, 55);
-            this.txtb_name.Margin = new System.Windows.Forms.Padding(2);
+            this.txtb_name.Location = new System.Drawing.Point(144, 68);
+            this.txtb_name.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtb_name.Name = "txtb_name";
-            this.txtb_name.Size = new System.Drawing.Size(231, 20);
+            this.txtb_name.Size = new System.Drawing.Size(307, 22);
             this.txtb_name.TabIndex = 15;
             // 
             // lbl_titre
             // 
             this.lbl_titre.AutoSize = true;
-            this.lbl_titre.Location = new System.Drawing.Point(105, 23);
-            this.lbl_titre.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbl_titre.Location = new System.Drawing.Point(140, 28);
             this.lbl_titre.Name = "lbl_titre";
-            this.lbl_titre.Size = new System.Drawing.Size(44, 13);
+            this.lbl_titre.Size = new System.Drawing.Size(58, 17);
             this.lbl_titre.TabIndex = 14;
             this.lbl_titre.Text = "Modifier";
             // 
             // txtb_location
             // 
-            this.txtb_location.Location = new System.Drawing.Point(108, 150);
+            this.txtb_location.Location = new System.Drawing.Point(144, 185);
+            this.txtb_location.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtb_location.Mask = ">A0<A";
             this.txtb_location.Name = "txtb_location";
-            this.txtb_location.Size = new System.Drawing.Size(231, 20);
+            this.txtb_location.Size = new System.Drawing.Size(24, 22);
             this.txtb_location.TabIndex = 25;
             // 
             // UpdateArticle
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(420, 246);
+            this.ClientSize = new System.Drawing.Size(560, 303);
             this.Controls.Add(this.txtb_location);
             this.Controls.Add(this.nud_quantity);
             this.Controls.Add(this.lbl_quantity);
@@ -163,6 +165,7 @@
             this.Controls.Add(this.lbl_name);
             this.Controls.Add(this.txtb_name);
             this.Controls.Add(this.lbl_titre);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "UpdateArticle";
             this.Text = "UpdateArticle";
             this.Load += new System.EventHandler(this.UpdateArticle_Load);

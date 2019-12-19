@@ -9,7 +9,6 @@ D:\Users\UlDev\CESI - Projet Inventaire\gestinv\obj\Debug\Gestinv.pdb
 D:\Users\UlDev\CESI - Projet Inventaire\gestinv\obj\Debug\Gestinv.Connection.resources
 D:\Users\UlDev\CESI - Projet Inventaire\gestinv\obj\Debug\Gestinv.Stock_admin.resources
 D:\Users\UlDev\CESI - Projet Inventaire\gestinv\obj\Debug\Gestinv.Stock_user.resources
-C:\Users\matth\OneDrive\Documents\GitHub\gestinv\obj\Debug\Gestinv.csprojAssemblyReference.cache
 C:\Users\matth\OneDrive\Documents\GitHub\gestinv\obj\Debug\Gestinv.Connection.resources
 C:\Users\matth\OneDrive\Documents\GitHub\gestinv\obj\Debug\Gestinv.Stock_admin.resources
 C:\Users\matth\OneDrive\Documents\GitHub\gestinv\obj\Debug\Gestinv.Stock_user.resources
@@ -52,3 +51,6 @@ D:\Users\UlDev\CESI - Projet Inventaire\gestinv\obj\Debug\Gestinv.AddFamily.reso
 D:\Users\UlDev\CESI - Projet Inventaire\gestinv\obj\Debug\Gestinv.UpdateFamily.resources
 D:\Users\UlDev\CESI - Projet Inventaire\gestinv\obj\Debug\Gestinv.csprojAssemblyReference.cache
 D:\Users\UlDev\CESI - Projet Inventaire\gestinv\obj\Debug\Gestinv.UpdateArticle.resources
+C:\Users\matth\OneDrive\Documents\GitHub\gestinv\obj\Debug\Gestinv.UpdateArticle.resources
+C:\Users\matth\OneDrive\Documents\GitHub\gestinv\obj\Debug\Gestinv.csprojAssemblyReference.cache
+C:\Users\matth\OneDrive\Documents\GitHub\gestinv\obj\Debug\Gestinv.AddArticle.resources

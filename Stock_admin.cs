@@ -56,7 +56,7 @@ namespace Gestinv
             dtgv_articles.Columns[0].Visible = false;
             dtgv_articles.Columns[1].Visible = false;
             dtgv_articles.Columns[5].Visible = false;
-            // WARNING les index partent de la dernière de la colonne de la BDD !
+            // WARNING les index partent de la dernière colonne de la BDD !
         }
 
         private void modify_family_Click(object sender, EventArgs e)
@@ -75,6 +75,12 @@ namespace Gestinv
                 UpdateArticle FUpdateArticle = new UpdateArticle((int)dtgv_articles["Id", e.RowIndex].Value, CurrentUser.Id, IdSynchro, (int)dtgv_articles[0, e.RowIndex].Value, this);
                 FUpdateArticle.Show();
             }
+        }
+
+        private void btn_add_article_Click(object sender, EventArgs e)
+        {
+            AddArticle addarticle = new AddArticle(CurrentUser.Id, IdSynchro);
+            addarticle.Show();
         }
     }
 }
