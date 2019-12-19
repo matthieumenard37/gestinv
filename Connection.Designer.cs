@@ -95,13 +95,19 @@
             // btn_connect
             // 
             this.btn_connect.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btn_connect.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_connect.BackColor = System.Drawing.Color.Transparent;
+            this.btn_connect.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btn_connect.FlatAppearance.BorderSize = 0;
+            this.btn_connect.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_connect.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_connect.ForeColor = System.Drawing.Color.White;
+            this.btn_connect.Image = ((System.Drawing.Image)(resources.GetObject("btn_connect.Image")));
             this.btn_connect.Location = new System.Drawing.Point(185, 344);
             this.btn_connect.Name = "btn_connect";
             this.btn_connect.Size = new System.Drawing.Size(232, 48);
             this.btn_connect.TabIndex = 4;
             this.btn_connect.Text = "Se connecter";
-            this.btn_connect.UseVisualStyleBackColor = true;
+            this.btn_connect.UseVisualStyleBackColor = false;
             this.btn_connect.Click += new System.EventHandler(this.button1_Click);
             // 
             // lbl_espace_connexion
@@ -121,7 +127,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(604, 419);
             this.Controls.Add(this.lbl_espace_connexion);
             this.Controls.Add(this.btn_connect);
