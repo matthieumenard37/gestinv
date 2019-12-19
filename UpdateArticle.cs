@@ -104,6 +104,7 @@ namespace Gestinv
                 if (ssc.DelArticle(_a.Id, IdSynchro) == 1)
                 {
                     MessageBox.Show("L'article a bien été supprimé");
+                    StockAdmin.dtgv_articles.DataSource = ssc.GetArticles(_a.FamilyId, true);
                     this.Close();
                 }
                 else
