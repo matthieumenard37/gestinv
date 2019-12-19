@@ -39,7 +39,7 @@
             // 
             this.btn_delete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.btn_delete.ForeColor = System.Drawing.Color.Transparent;
-            this.btn_delete.Location = new System.Drawing.Point(326, 178);
+            this.btn_delete.Location = new System.Drawing.Point(201, 89);
             this.btn_delete.Margin = new System.Windows.Forms.Padding(2);
             this.btn_delete.Name = "btn_delete";
             this.btn_delete.Size = new System.Drawing.Size(152, 42);
@@ -52,7 +52,7 @@
             // 
             this.btn_Submit.BackColor = System.Drawing.Color.ForestGreen;
             this.btn_Submit.ForeColor = System.Drawing.Color.White;
-            this.btn_Submit.Location = new System.Drawing.Point(145, 178);
+            this.btn_Submit.Location = new System.Drawing.Point(11, 89);
             this.btn_Submit.Margin = new System.Windows.Forms.Padding(2);
             this.btn_Submit.Name = "btn_Submit";
             this.btn_Submit.Size = new System.Drawing.Size(152, 42);
@@ -64,7 +64,7 @@
             // lbl_name
             // 
             this.lbl_name.AutoSize = true;
-            this.lbl_name.Location = new System.Drawing.Point(148, 117);
+            this.lbl_name.Location = new System.Drawing.Point(11, 50);
             this.lbl_name.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_name.Name = "lbl_name";
             this.lbl_name.Size = new System.Drawing.Size(74, 13);
@@ -74,7 +74,7 @@
             // 
             // txtb_name
             // 
-            this.txtb_name.Location = new System.Drawing.Point(226, 114);
+            this.txtb_name.Location = new System.Drawing.Point(101, 47);
             this.txtb_name.Margin = new System.Windows.Forms.Padding(2);
             this.txtb_name.Name = "txtb_name";
             this.txtb_name.Size = new System.Drawing.Size(252, 20);
@@ -83,7 +83,7 @@
             // lbl_titre
             // 
             this.lbl_titre.AutoSize = true;
-            this.lbl_titre.Location = new System.Drawing.Point(268, 69);
+            this.lbl_titre.Location = new System.Drawing.Point(62, 9);
             this.lbl_titre.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_titre.Name = "lbl_titre";
             this.lbl_titre.Size = new System.Drawing.Size(44, 13);
@@ -94,13 +94,13 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(600, 366);
+            this.ClientSize = new System.Drawing.Size(368, 145);
             this.Controls.Add(this.btn_delete);
             this.Controls.Add(this.btn_Submit);
             this.Controls.Add(this.lbl_name);
             this.Controls.Add(this.txtb_name);
             this.Controls.Add(this.lbl_titre);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "UpdateFamily";
             this.Text = "UpdateFamily";
             this.ResumeLayout(false);

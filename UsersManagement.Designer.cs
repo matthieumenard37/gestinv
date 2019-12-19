@@ -30,17 +30,13 @@
         {
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UsersManagement));
 			this.dtgv_usersList = new System.Windows.Forms.DataGridView();
+			this.btn_addUser = new System.Windows.Forms.Button();
+			this.lbl_titreUsersManagement = new System.Windows.Forms.Label();
 			this.Nom = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.Password = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.Actif = new System.Windows.Forms.DataGridViewCheckBoxColumn();
 			this.Admin = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-			this.btn_logout = new System.Windows.Forms.Button();
-			this.btn_addUser = new System.Windows.Forms.Button();
-			this.btn_deleteUser = new System.Windows.Forms.Button();
-			this.btn_updateUser = new System.Windows.Forms.Button();
-			this.lbl_titreUsersManagement = new System.Windows.Forms.Label();
-			this.label2 = new System.Windows.Forms.Label();
 			((System.ComponentModel.ISupportInitialize)(this.dtgv_usersList)).BeginInit();
 			this.SuspendLayout();
 			// 
@@ -60,16 +56,45 @@
             this.Password,
             this.Actif,
             this.Admin});
-			this.dtgv_usersList.Location = new System.Drawing.Point(30, 193);
-			this.dtgv_usersList.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+			this.dtgv_usersList.Location = new System.Drawing.Point(15, 107);
+			this.dtgv_usersList.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
 			this.dtgv_usersList.Name = "dtgv_usersList";
 			this.dtgv_usersList.ReadOnly = true;
 			this.dtgv_usersList.RowHeadersWidth = 82;
 			this.dtgv_usersList.RowTemplate.Height = 24;
-			this.dtgv_usersList.Size = new System.Drawing.Size(1190, 441);
+			this.dtgv_usersList.Size = new System.Drawing.Size(659, 229);
 			this.dtgv_usersList.TabIndex = 0;
 			this.dtgv_usersList.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgv_usersList_CellContentClick);
 			this.dtgv_usersList.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgv_usersList_CellDoubleClick);
+			// 
+			// btn_addUser
+			// 
+			this.btn_addUser.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+			this.btn_addUser.BackColor = System.Drawing.Color.DimGray;
+			this.btn_addUser.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_addUser.BackgroundImage")));
+			this.btn_addUser.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+			this.btn_addUser.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.btn_addUser.ForeColor = System.Drawing.Color.Transparent;
+			this.btn_addUser.Location = new System.Drawing.Point(311, 342);
+			this.btn_addUser.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+			this.btn_addUser.Name = "btn_addUser";
+			this.btn_addUser.Size = new System.Drawing.Size(48, 48);
+			this.btn_addUser.TabIndex = 3;
+			this.btn_addUser.UseVisualStyleBackColor = false;
+			this.btn_addUser.Click += new System.EventHandler(this.btn_addUser_Click);
+			// 
+			// lbl_titreUsersManagement
+			// 
+			this.lbl_titreUsersManagement.BackColor = System.Drawing.Color.Transparent;
+			this.lbl_titreUsersManagement.Font = new System.Drawing.Font("Mongolian Baiti", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lbl_titreUsersManagement.Location = new System.Drawing.Point(-2, 14);
+			this.lbl_titreUsersManagement.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+			this.lbl_titreUsersManagement.Name = "lbl_titreUsersManagement";
+			this.lbl_titreUsersManagement.Size = new System.Drawing.Size(685, 35);
+			this.lbl_titreUsersManagement.TabIndex = 0;
+			this.lbl_titreUsersManagement.Text = "GESTION DES UTILISATEURS";
+			this.lbl_titreUsersManagement.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+			this.lbl_titreUsersManagement.Click += new System.EventHandler(this.label1_Click);
 			// 
 			// Nom
 			// 
@@ -111,6 +136,7 @@
 			this.Actif.Resizable = System.Windows.Forms.DataGridViewTriState.True;
 			this.Actif.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Programmatic;
 			this.Actif.TrueValue = "true";
+			this.Actif.Visible = false;
 			this.Actif.Width = 55;
 			// 
 			// Admin
@@ -126,130 +152,32 @@
 			this.Admin.TrueValue = "true";
 			this.Admin.Width = 55;
 			// 
-			// btn_logout
-			// 
-			this.btn_logout.BackColor = System.Drawing.Color.DimGray;
-			this.btn_logout.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_logout.BackgroundImage")));
-			this.btn_logout.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-			this.btn_logout.Cursor = System.Windows.Forms.Cursors.Hand;
-			this.btn_logout.ForeColor = System.Drawing.Color.Transparent;
-			this.btn_logout.Location = new System.Drawing.Point(1509, 19);
-			this.btn_logout.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-			this.btn_logout.Name = "btn_logout";
-			this.btn_logout.Size = new System.Drawing.Size(96, 92);
-			this.btn_logout.TabIndex = 5;
-			this.btn_logout.UseVisualStyleBackColor = false;
-			// 
-			// btn_addUser
-			// 
-			this.btn_addUser.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-			this.btn_addUser.BackColor = System.Drawing.Color.DimGray;
-			this.btn_addUser.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_addUser.BackgroundImage")));
-			this.btn_addUser.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-			this.btn_addUser.Cursor = System.Windows.Forms.Cursors.Hand;
-			this.btn_addUser.ForeColor = System.Drawing.Color.Transparent;
-			this.btn_addUser.Location = new System.Drawing.Point(569, 735);
-			this.btn_addUser.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-			this.btn_addUser.Name = "btn_addUser";
-			this.btn_addUser.Size = new System.Drawing.Size(96, 92);
-			this.btn_addUser.TabIndex = 3;
-			this.btn_addUser.UseVisualStyleBackColor = false;
-			this.btn_addUser.Click += new System.EventHandler(this.btn_addUser_Click);
-			// 
-			// btn_deleteUser
-			// 
-			this.btn_deleteUser.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-			this.btn_deleteUser.BackColor = System.Drawing.Color.DimGray;
-			this.btn_deleteUser.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_deleteUser.BackgroundImage")));
-			this.btn_deleteUser.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-			this.btn_deleteUser.Cursor = System.Windows.Forms.Cursors.Hand;
-			this.btn_deleteUser.ForeColor = System.Drawing.Color.Transparent;
-			this.btn_deleteUser.Location = new System.Drawing.Point(777, 735);
-			this.btn_deleteUser.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-			this.btn_deleteUser.Name = "btn_deleteUser";
-			this.btn_deleteUser.Size = new System.Drawing.Size(96, 92);
-			this.btn_deleteUser.TabIndex = 4;
-			this.btn_deleteUser.UseVisualStyleBackColor = false;
-			this.btn_deleteUser.Click += new System.EventHandler(this.btn_deleteUser_Click);
-			// 
-			// btn_updateUser
-			// 
-			this.btn_updateUser.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-			this.btn_updateUser.BackColor = System.Drawing.Color.DimGray;
-			this.btn_updateUser.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_updateUser.BackgroundImage")));
-			this.btn_updateUser.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-			this.btn_updateUser.Cursor = System.Windows.Forms.Cursors.Hand;
-			this.btn_updateUser.ForeColor = System.Drawing.Color.Transparent;
-			this.btn_updateUser.Location = new System.Drawing.Point(987, 735);
-			this.btn_updateUser.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-			this.btn_updateUser.Name = "btn_updateUser";
-			this.btn_updateUser.Size = new System.Drawing.Size(96, 92);
-			this.btn_updateUser.TabIndex = 5;
-			this.btn_updateUser.UseVisualStyleBackColor = false;
-			this.btn_updateUser.Click += new System.EventHandler(this.btn_updateUser_Click);
-			// 
-			// lbl_titreUsersManagement
-			// 
-			this.lbl_titreUsersManagement.BackColor = System.Drawing.Color.Transparent;
-			this.lbl_titreUsersManagement.Font = new System.Drawing.Font("Mongolian Baiti", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.lbl_titreUsersManagement.Location = new System.Drawing.Point(-3, 27);
-			this.lbl_titreUsersManagement.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-			this.lbl_titreUsersManagement.Name = "lbl_titreUsersManagement";
-			this.lbl_titreUsersManagement.Size = new System.Drawing.Size(1641, 67);
-			this.lbl_titreUsersManagement.TabIndex = 0;
-			this.lbl_titreUsersManagement.Text = "GESTION DES UTILISATEURS";
-			this.lbl_titreUsersManagement.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-			this.lbl_titreUsersManagement.Click += new System.EventHandler(this.label1_Click);
-			// 
-			// label2
-			// 
-			this.label2.AutoSize = true;
-			this.label2.BackColor = System.Drawing.Color.Transparent;
-			this.label2.Font = new System.Drawing.Font("Mongolian Baiti", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label2.Location = new System.Drawing.Point(1274, 204);
-			this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-			this.label2.Name = "label2";
-			this.label2.Size = new System.Drawing.Size(130, 46);
-			this.label2.TabIndex = 7;
-			this.label2.Text = "Filtrer";
-			this.label2.Click += new System.EventHandler(this.label2_Click);
-			// 
 			// UsersManagement
 			// 
-			this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-			this.ClientSize = new System.Drawing.Size(1669, 841);
-			this.Controls.Add(this.label2);
-			this.Controls.Add(this.btn_logout);
+			this.ClientSize = new System.Drawing.Size(685, 403);
 			this.Controls.Add(this.lbl_titreUsersManagement);
-			this.Controls.Add(this.btn_updateUser);
-			this.Controls.Add(this.btn_deleteUser);
 			this.Controls.Add(this.btn_addUser);
 			this.Controls.Add(this.dtgv_usersList);
-			this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+			this.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
 			this.Name = "UsersManagement";
 			this.Text = "UsersManagement";
 			this.Load += new System.EventHandler(this.UsersManagement_Load);
 			((System.ComponentModel.ISupportInitialize)(this.dtgv_usersList)).EndInit();
 			this.ResumeLayout(false);
-			this.PerformLayout();
-
         }
 
 		#endregion
 
 		public System.Windows.Forms.DataGridView dtgv_usersList;
-		private System.Windows.Forms.Button btn_logout;
 		private System.Windows.Forms.Button btn_addUser;
-		private System.Windows.Forms.Button btn_deleteUser;
-		private System.Windows.Forms.Button btn_updateUser;
 		private System.Windows.Forms.Label lbl_titreUsersManagement;
-		private System.Windows.Forms.Label label2;
-		private System.Windows.Forms.DataGridViewTextBoxColumn Nom;
-		private System.Windows.Forms.DataGridViewTextBoxColumn Id;
-		private System.Windows.Forms.DataGridViewTextBoxColumn Password;
-		private System.Windows.Forms.DataGridViewCheckBoxColumn Actif;
-		private System.Windows.Forms.DataGridViewCheckBoxColumn Admin;
-	}
+        private System.Windows.Forms.DataGridViewTextBoxColumn Nom;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Id;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Password;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn Actif;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn Admin;
+    }
 }

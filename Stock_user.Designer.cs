@@ -41,6 +41,7 @@
             // 
             // input_family
             // 
+            this.input_family.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.input_family.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.input_family.FormattingEnabled = true;
             this.input_family.Location = new System.Drawing.Point(128, 101);
@@ -51,6 +52,7 @@
             // 
             // input_article
             // 
+            this.input_article.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.input_article.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.input_article.FormattingEnabled = true;
             this.input_article.Location = new System.Drawing.Point(128, 169);
@@ -74,6 +76,11 @@
             // 
             // btn_synchro
             // 
+            this.btn_synchro.FlatAppearance.BorderSize = 0;
+            this.btn_synchro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_synchro.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_synchro.ForeColor = System.Drawing.Color.White;
+            this.btn_synchro.Image = ((System.Drawing.Image)(resources.GetObject("btn_synchro.Image")));
             this.btn_synchro.Location = new System.Drawing.Point(128, 306);
             this.btn_synchro.Margin = new System.Windows.Forms.Padding(2);
             this.btn_synchro.Name = "btn_synchro";
@@ -135,8 +142,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(628, 505);
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(628, 376);
             this.Controls.Add(this.input_quantity);
             this.Controls.Add(this.lbl_quantity);
             this.Controls.Add(this.lbl_article);

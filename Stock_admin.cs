@@ -43,7 +43,7 @@ namespace Gestinv
 
         private void add_family_Click_1(object sender, EventArgs e)
         {
-            AddFamily addfamily = new AddFamily(CurrentUser.Id, IdSynchro);
+            AddFamily addfamily = new AddFamily(CurrentUser.Id, IdSynchro, this);
             addfamily.Show();
         }
 
