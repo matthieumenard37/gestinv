@@ -52,3 +52,5 @@ D:\Users\UlDev\CESI - Projet Inventaire\gestinv\obj\Debug\Gestinv.AddFamily.reso
 D:\Users\UlDev\CESI - Projet Inventaire\gestinv\obj\Debug\Gestinv.UpdateFamily.resources
 D:\Users\UlDev\CESI - Projet Inventaire\gestinv\obj\Debug\Gestinv.csprojAssemblyReference.cache
 D:\Users\UlDev\CESI - Projet Inventaire\gestinv\obj\Debug\Gestinv.UpdateArticle.resources
+\\vmware-host\Shared Folders\Documents\GitHub\gestinv\obj\Debug\Gestinv.UpdateArticle.resources
+\\vmware-host\Shared Folders\Documents\GitHub\gestinv\obj\Debug\Gestinv.UpdateFamily.resources
